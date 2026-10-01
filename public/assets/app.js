@@ -47,6 +47,7 @@ function initCalculator(){
   const key=document.body.dataset.calc;
   if(!key||!configs[key])return;
   const c=configs[key],form=document.querySelector("#calc-form"),fields=document.querySelector("#fields");
+  form.setAttribute("autocomplete","off");
   document.querySelector("#calc-title").textContent=c.title;
   document.querySelector("#calc-desc").textContent=c.desc;
   let started=false;
@@ -61,6 +62,8 @@ function initCalculator(){
       selector='<label for="'+id+'">'+label+' ('+unit+')</label><input id="'+id+'" name="'+id+'" type="number" min="0.000001" max="1000000" step="any" value="'+def+'" required>';
     }
     d.innerHTML=selector;
+    const input=d.querySelector("#"+id);
+    if(input) input.setAttribute("autocomplete","off");
     fields.appendChild(d);
   });
   form.addEventListener("input",()=>{
@@ -90,8 +93,15 @@ function initCalculator(){
     window.dispatchEvent(new CustomEvent("calculator_completed",{detail:{calculator:c.title}}));
   });
   document.querySelector("#reset").onclick=()=>{
-    form.reset();
-    document.querySelector("#results").innerHTML="";
+    c.fields.forEach(([id,,unit,def,group])=>{
+      const input=document.getElementById(id);
+      if(input) input.value=String(def);
+      if(group){
+        const select=document.getElementById(id+"-unit");
+        if(select) select.value=unit;
+      }
+    });
+    document.querySelector("#results").innerHTML="<p class=\"muted\">Enter your project measurements and select Calculate.</p>";
     document.querySelector("#error").textContent="";
     started=false;
   };
