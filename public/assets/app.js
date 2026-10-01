@@ -124,6 +124,7 @@ function addFooterLinks(){
   });
 }
 document.addEventListener("DOMContentLoaded",()=>{
+  initAnalytics();
   initCalculator();
   filterCards();
   addFooterLinks();
