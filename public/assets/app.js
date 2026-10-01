@@ -1,3 +1,20 @@
+const GA_MEASUREMENT_ID="G-BLY14S21HM";
+function initAnalytics(){
+  window.dataLayer=window.dataLayer||[];
+  window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};
+  window.gtag("js",new Date());
+  window.gtag("config",GA_MEASUREMENT_ID,{anonymize_ip:true});
+  if(!document.querySelector('script[data-yardcompute-ga4]')){
+    const s=document.createElement("script");
+    s.async=true;
+    s.src="https://www.googletagmanager.com/gtag/js?id="+encodeURIComponent(GA_MEASUREMENT_ID);
+    s.dataset.yardcomputeGa4="true";
+    document.head.appendChild(s);
+  }
+  window.addEventListener("calculator_view",e=>window.gtag("event","calculator_view",{calculator_name:e.detail?.calculator||"unknown"}));
+  window.addEventListener("calculator_start",e=>window.gtag("event","calculator_start",{calculator_name:e.detail?.calculator||"unknown"}));
+  window.addEventListener("calculator_completed",e=>window.gtag("event","calculator_completed",{calculator_name:e.detail?.calculator||"unknown"}));
+}
 const unitGroups={
   lengthFt:{base:"ft",options:[["ft","ft"],["m","m"]]},
   dimensionIn:{base:"in",options:[["in","in"],["ft","ft"],["cm","cm"]]},
