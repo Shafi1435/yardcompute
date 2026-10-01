@@ -16,6 +16,9 @@ Free calculators for home and yard projects.
 
 Static, dependency-light site designed for Cloudflare Workers Static Assets.
 
+## Routing
+Calculator folders use trailing-slash URLs and are served from their `index.html` files by the Workers Static Assets configuration.
+
 ## Local preview
 npm install
 npm run preview
