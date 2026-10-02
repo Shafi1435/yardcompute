@@ -46,6 +46,13 @@ export default {
       url.pathname = pathname + "index.html";
     }
 
-    return env.ASSETS.fetch(new Request(url, request));
+    const response = await env.ASSETS.fetch(new Request(url, request));
+    const headers = new Headers(response.headers);
+    headers.set("X-Content-Type-Options", "nosniff");
+    headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
+    headers.set("Permissions-Policy", "camera=(), microphone=(), geolocation=()");
+    headers.set("X-Frame-Options", "DENY");
+    headers.set("Content-Security-Policy", "frame-ancestors 'none'; object-src 'none'; base-uri 'self';");
+    return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
   },
 };
