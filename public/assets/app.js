@@ -124,18 +124,8 @@ function filterCards(){
     document.querySelectorAll("[data-card]").forEach(x=>x.hidden=!x.innerText.toLowerCase().includes(v));
   });
 }
-function addFooterLinks(){
-  document.querySelectorAll("footer .wrap").forEach(f=>{
-    if(f.querySelector(".site-links"))return;
-    const p=document.createElement("p");
-    p.className="site-links";
-    p.innerHTML='<a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="/privacy-policy/">Privacy Policy</a> · <a href="/terms/">Terms</a> · <a href="/disclaimer/">Disclaimer</a>';
-    f.appendChild(p);
-  });
-}
 document.addEventListener("DOMContentLoaded",()=>{
   initAnalytics();
   initCalculator();
   filterCards();
-  addFooterLinks();
 });
