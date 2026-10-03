@@ -24,13 +24,19 @@ const SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://yardcompute.com/deck-calculators/deck-joist-calculator/</loc></url>
   <url><loc>https://yardcompute.com/deck-calculators/deck-board-spacing-calculator/</loc></url>
   <url><loc>https://yardcompute.com/concrete-calculators/concrete-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/concrete-calculators/concrete-bag-calculator/</loc></url>
   <url><loc>https://yardcompute.com/concrete-calculators/concrete-footing-calculator/</loc></url>
   <url><loc>https://yardcompute.com/concrete-calculators/post-hole-concrete-calculator/</loc></url>
   <url><loc>https://yardcompute.com/gravel-calculators/gravel-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/gravel-calculators/gravel-bag-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/gravel-calculators/pea-gravel-calculator/</loc></url>
   <url><loc>https://yardcompute.com/gravel-calculators/driveway-gravel-calculator/</loc></url>
   <url><loc>https://yardcompute.com/paver-calculators/paver-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/paver-calculators/paver-edge-restraint-calculator/</loc></url>
   <url><loc>https://yardcompute.com/paver-calculators/paver-base-sand-calculator/</loc></url>
   <url><loc>https://yardcompute.com/landscaping-calculators/mulch-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/landscaping-calculators/sod-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/landscaping-calculators/topsoil-calculator/</loc></url>
   <url><loc>https://yardcompute.com/landscaping-calculators/mulch-bag-calculator/</loc></url>
   <url><loc>https://yardcompute.com/guides/fence-material-calculation/</loc></url>
   <url><loc>https://yardcompute.com/guides/fence-post-spacing/</loc></url>
