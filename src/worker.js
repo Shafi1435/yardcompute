@@ -26,6 +26,7 @@ const SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://yardcompute.com/paver-calculators/paver-calculator/</loc></url>
   <url><loc>https://yardcompute.com/paver-calculators/paver-base-sand-calculator/</loc></url>
   <url><loc>https://yardcompute.com/landscaping-calculators/mulch-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/landscaping-calculators/mulch-bag-calculator/</loc></url>
   <url><loc>https://yardcompute.com/guides/fence-material-calculation/</loc></url>
   <url><loc>https://yardcompute.com/guides/fence-post-spacing/</loc></url>
   <url><loc>https://yardcompute.com/guides/concrete-slab-calculation/</loc></url>
