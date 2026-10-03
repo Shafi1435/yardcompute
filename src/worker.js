@@ -38,6 +38,17 @@ const SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://yardcompute.com/landscaping-calculators/sod-calculator/</loc></url>
   <url><loc>https://yardcompute.com/landscaping-calculators/topsoil-calculator/</loc></url>
   <url><loc>https://yardcompute.com/landscaping-calculators/mulch-bag-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/fence-calculators/fence-gate-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/fence-calculators/fence-picket-spacing-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/fence-calculators/fence-panel-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/deck-calculators/deck-screw-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/deck-calculators/deck-footing-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/concrete-calculators/concrete-patio-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/concrete-calculators/concrete-column-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/gravel-calculators/gravel-tonnage-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/gravel-calculators/river-rock-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/paver-calculators/paver-sand-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/landscaping-calculators/grass-seed-calculator/</loc></url>
   <url><loc>https://yardcompute.com/guides/fence-material-calculation/</loc></url>
   <url><loc>https://yardcompute.com/guides/fence-post-spacing/</loc></url>
   <url><loc>https://yardcompute.com/guides/concrete-slab-calculation/</loc></url>
