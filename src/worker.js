@@ -66,7 +66,7 @@ const SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://yardcompute.com/home-calculators/</loc></url>
   <url><loc>https://yardcompute.com/guides/fence-material-calculation/</loc></url>
   <url><loc>https://yardcompute.com/guides/fence-post-spacing/</loc></url>
-  <url><loc>https://yardcompute.com/guides/concrete-slab-calculation/</loc></url>
+  <url><loc>https://yardcompute.com/guides/concrete-driveway-calculation/</loc></url><url><loc>https://yardcompute.com/guides/french-drain-gravel-calculation/</loc></url><url><loc>https://yardcompute.com/guides/wall-framing-calculation/</loc></url><url><loc>https://yardcompute.com/guides/grass-seed-calculation/</loc></url><url><loc>https://yardcompute.com/guides/paint-calculation/</loc></url><url><loc>https://yardcompute.com/guides/concrete-slab-calculation/</loc></url>
   <url><loc>https://yardcompute.com/guides/driveway-gravel-calculation/</loc></url>
   <url><loc>https://yardcompute.com/guides/gravel-depth-coverage/</loc></url>
   <url><loc>https://yardcompute.com/guides/deck-board-calculation/</loc></url>
