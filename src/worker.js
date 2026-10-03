@@ -77,42 +77,12 @@ export default {
     headers.set("X-Frame-Options", "DENY");
     headers.set("Content-Security-Policy", "frame-ancestors 'none'; object-src 'none'; base-uri 'self';");
 
-    // Add a sitewide canonical URL to HTML pages.
-    // The canonical always uses the primary hostname (yardcompute.com),
-    // even when a visitor arrives through www.yardcompute.com.
-    const contentType = response.headers.get("content-type") || "";
-    if (response.ok && contentType.toLowerCase().includes("text/html")) {
-      const canonicalPath =
-        pathname === "/"
-          ? "/"
-          : pathname.endsWith("/")
-            ? pathname
-            : pathname + "/";
-
-      const canonicalUrl = "https://yardcompute.com" + canonicalPath;
-
-      return new HTMLRewriter()
-        .on("head", {
-          element(element) {
-            element.prepend(
-              `<link rel="canonical" href="${canonicalUrl}">`,
-              { html: true }
-            );
-          },
-        })
-        .transform(
-          new Response(response.body, {
-            status: response.status,
-            statusText: response.statusText,
-            headers,
-          })
-        );
-    }
-
+    // Page HTML files already contain their own canonical tags.
+    // Do not inject another one here, which would create duplicate canonicals.
     return new Response(response.body, {
       status: response.status,
       statusText: response.statusText,
       headers,
-    });
+    });;
   },
 };
