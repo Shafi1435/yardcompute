@@ -16,6 +16,7 @@ const SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://yardcompute.com/fence-calculators/fence-calculator/</loc></url>
   <url><loc>https://yardcompute.com/fence-calculators/fence-post-spacing-calculator/</loc></url>
   <url><loc>https://yardcompute.com/fence-calculators/fence-post-concrete-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/fence-calculators/fence-material-calculator/</loc></url>
   <url><loc>https://yardcompute.com/deck-calculators/deck-board-calculator/</loc></url>
   <url><loc>https://yardcompute.com/deck-calculators/deck-board-spacing-calculator/</loc></url>
   <url><loc>https://yardcompute.com/concrete-calculators/concrete-calculator/</loc></url>
