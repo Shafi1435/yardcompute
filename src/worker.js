@@ -6,6 +6,13 @@ const SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://yardcompute.com/privacy-policy/</loc></url>
   <url><loc>https://yardcompute.com/terms/</loc></url>
   <url><loc>https://yardcompute.com/disclaimer/</loc></url>
+  <url><loc>https://yardcompute.com/fence-calculators/</loc></url>
+  <url><loc>https://yardcompute.com/deck-calculators/</loc></url>
+  <url><loc>https://yardcompute.com/concrete-calculators/</loc></url>
+  <url><loc>https://yardcompute.com/gravel-calculators/</loc></url>
+  <url><loc>https://yardcompute.com/paver-calculators/</loc></url>
+  <url><loc>https://yardcompute.com/landscaping-calculators/</loc></url>
+  <url><loc>https://yardcompute.com/guides/</loc></url>
   <url><loc>https://yardcompute.com/fence-calculators/fence-calculator/</loc></url>
   <url><loc>https://yardcompute.com/fence-calculators/fence-post-spacing-calculator/</loc></url>
   <url><loc>https://yardcompute.com/fence-calculators/fence-post-concrete-calculator/</loc></url>
@@ -15,7 +22,22 @@ const SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://yardcompute.com/concrete-calculators/post-hole-concrete-calculator/</loc></url>
   <url><loc>https://yardcompute.com/gravel-calculators/gravel-calculator/</loc></url>
   <url><loc>https://yardcompute.com/gravel-calculators/driveway-gravel-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/paver-calculators/paver-calculator/</loc></url>
   <url><loc>https://yardcompute.com/landscaping-calculators/mulch-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/guides/fence-material-calculation/</loc></url>
+  <url><loc>https://yardcompute.com/guides/fence-post-spacing/</loc></url>
+  <url><loc>https://yardcompute.com/guides/concrete-slab-calculation/</loc></url>
+  <url><loc>https://yardcompute.com/guides/driveway-gravel-calculation/</loc></url>
+  <url><loc>https://yardcompute.com/guides/gravel-depth-coverage/</loc></url>
+  <url><loc>https://yardcompute.com/guides/deck-board-calculation/</loc></url>
+  <url><loc>https://yardcompute.com/guides/deck-board-linear-feet/</loc></url>
+  <url><loc>https://yardcompute.com/guides/mulch-calculation/</loc></url>
+  <url><loc>https://yardcompute.com/guides/mulch-bags-vs-cubic-yards/</loc></url>
+  <url><loc>https://yardcompute.com/guides/fence-post-concrete-calculation/</loc></url>
+  <url><loc>https://yardcompute.com/guides/post-hole-concrete-calculation/</loc></url>
+  <url><loc>https://yardcompute.com/guides/paver-calculation/</loc></url>
+  <url><loc>https://yardcompute.com/guides/paver-base-sand-calculation/</loc></url>
+  <url><loc>https://yardcompute.com/guides/concrete-order-quantity/</loc></url>
 </urlset>`;
 
 export default {
