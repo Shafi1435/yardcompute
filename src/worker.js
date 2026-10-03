@@ -49,6 +49,18 @@ const SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://yardcompute.com/gravel-calculators/river-rock-calculator/</loc></url>
   <url><loc>https://yardcompute.com/paver-calculators/paver-sand-calculator/</loc></url>
   <url><loc>https://yardcompute.com/landscaping-calculators/grass-seed-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/fence-calculators/privacy-fence-materials-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/deck-calculators/deck-materials-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/landscaping-calculators/raised-bed-soil-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/paver-calculators/permeable-paver-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/paver-calculators/polymeric-sand-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/home-calculators/paint-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/home-calculators/flooring-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/home-calculators/drywall-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/home-calculators/tile-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/home-calculators/stair-stringer-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/landscaping-calculators/retaining-wall-calculator/</loc></url>
+  <url><loc>https://yardcompute.com/home-calculators/</loc></url>
   <url><loc>https://yardcompute.com/guides/fence-material-calculation/</loc></url>
   <url><loc>https://yardcompute.com/guides/fence-post-spacing/</loc></url>
   <url><loc>https://yardcompute.com/guides/concrete-slab-calculation/</loc></url>
