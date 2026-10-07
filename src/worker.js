@@ -114,7 +114,20 @@ export default {
       url.pathname = pathname + "index.html";
     }
 
-    const response = await env.ASSETS.fetch(new Request(url, request));
+    let response = await env.ASSETS.fetch(new Request(url, request));
+
+    // Add one consistent social preview to every HTML page without editing dozens of page files.
+    if (response.ok && (response.headers.get("content-type") || "").includes("text/html")) {
+      const html = await response.text();
+      const ogTags = `
+<meta property="og:image" content="https://yardcompute.com/assets/og-image.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://yardcompute.com/assets/og-image.svg">`;
+      response = new Response(html.replace("</head>", ogTags + "</head>"), response);
+    }
+
     const headers = new Headers(response.headers);
     headers.set("Strict-Transport-Security", "max-age=31536000; includeSubDomains");
     headers.set("X-Content-Type-Options", "nosniff");
