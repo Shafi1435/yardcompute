@@ -85,6 +85,12 @@ export default {
     const url = new URL(request.url);
     const pathname = url.pathname;
 
+    // Use the apex domain as the single canonical host. Redirect www to avoid duplicate host URLs.
+    if (url.hostname === "www.yardcompute.com") {
+      url.hostname = "yardcompute.com";
+      return Response.redirect(url.toString(), 301);
+    }
+
     // Serve the sitemap directly so crawlers receive a stable XML response.
     if (pathname === "/sitemap.xml") {
       return new Response(SITEMAP, {
