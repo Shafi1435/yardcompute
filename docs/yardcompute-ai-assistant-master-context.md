@@ -388,3 +388,126 @@ For any meaningful new site capability, also consider as applicable:
 - operational monitoring and QA.
 
 The assistant should behave like a professional product + SEO + technical reviewer, not like a keyword generator or competitor copier.
+
+
+## Next-level professional site requirements
+These are standing requirements for future planning, not a request to implement everything immediately.
+
+### 1. Revenue strategy must be broader than AdSense
+- Treat AdSense as one possible revenue stream, not the only goal.
+- Evaluate future options such as relevant affiliate relationships, sponsored placements only when appropriate, useful premium/project features, downloadable project summaries, and other genuinely valuable services/products.
+- Any monetization must be transparent, non-deceptive, user-first, and reviewed against current platform policies and applicable disclosure requirements.
+- Never design content primarily to manufacture ad impressions.
+
+### 2. AdSense readiness checklist
+Before any future AdSense application, perform a dedicated pre-application audit covering:
+- original/useful content and sufficient substance
+- clear navigation and complete site
+- About, Contact, Privacy Policy, Terms, Disclaimer and other relevant disclosures
+- no deceptive navigation or ad-like UI
+- no invalid-click/traffic-generation practices
+- no policy-prohibited or problematic content
+- mobile usability and page experience
+- site ownership/access and ad-code implementation requirements
+- privacy/consent requirements applicable to the site's visitors and advertising setup
+- broken links, empty pages, placeholder content, indexing anomalies, and obvious quality issues.
+Never promise approval.
+
+### 3. Search-quality/content governance
+- Every new page must have a real user purpose and meaningful differentiation.
+- Avoid programmatic pages that differ only by keyword/location wording unless the page has genuine unique value.
+- Avoid publishing large batches simply because competitors have more pages.
+- Prefer depth, accuracy, examples, assumptions, original calculations/tools, and practical usefulness.
+- When AI assistance is used, maintain human review, fact checking, editing, and useful original value; never use AI as a reason to mass-publish thin content.
+- Where authorship is appropriate, use truthful authorship/bylines only; never fabricate experts or credentials.
+- Keep a content refresh schedule for pages whose formulas, standards, prices, or assumptions can change.
+
+### 4. Calculator/product quality
+- Treat calculators as products, not just SEO pages.
+- Maintain formula test cases and expected outputs for important calculators.
+- Add unit conversion, package/yield assumptions, waste handling, multi-section inputs, and ordering outputs only where useful.
+- Clearly distinguish estimates from exact measurements and code/engineering requirements.
+- For construction/safety-sensitive calculations, include appropriate limitations and encourage checking local code/manufacturer instructions where relevant.
+- Consider a visible “How this calculation works” area and transparent assumptions on important tools.
+
+### 5. Performance and Core Web Vitals
+- Monitor mobile performance and Core Web Vitals.
+- Keep JavaScript, CSS, images, fonts, third-party scripts, and analytics as lean as practical.
+- Avoid adding libraries/widgets merely for appearance.
+- Test significant UI changes on mobile and desktop.
+- Watch LCP, INP, CLS, page weight, and unnecessary network requests.
+
+### 6. Accessibility
+- Use semantic HTML, logical heading hierarchy, labels, keyboard navigation, visible focus states, sufficient contrast, meaningful button names, accessible form errors, and usable calculator controls.
+- Do not rely on color alone to communicate important information.
+- Treat accessibility as both a quality and usability requirement, not merely an SEO tactic.
+
+### 7. Security and resilience
+- Keep dependencies and build tooling reasonably current.
+- Minimize third-party scripts and permissions.
+- Never expose secrets/API keys in client-side code or repository files.
+- Review Cloudflare security settings before changing them.
+- Maintain a rollback path and verify production after deployment.
+- Monitor broken deployments, unexpected redirects, malware/security warnings, and important uptime issues.
+- Prefer least-privilege access for integrations.
+
+### 8. Privacy and data minimization
+- Do not collect personal data unless a real feature requires it.
+- If forms, accounts, saved projects, payments, comments, uploads, or personalization are added, perform a privacy/legal review before implementation.
+- Update privacy disclosures when data practices change.
+- Evaluate consent/cookie requirements based on actual technologies, jurisdictions, and monetization setup rather than adding unnecessary consent tooling.
+
+### 9. Measurement and business intelligence
+Maintain useful measurement without excessive tracking:
+- GSC for queries, pages, impressions, clicks, CTR, positions and indexing.
+- GA4 for useful behavioral/conversion events.
+- Define meaningful product events such as calculator use, result completion, related-tool clicks, guide engagement, and outbound monetization clicks where appropriate.
+- Use data to improve the product, not to justify manipulative SEO.
+- Build a simple weekly/monthly KPI view: organic clicks, impressions, CTR, ranking distribution, calculator usage, returning users where meaningful, and revenue once monetized.
+
+### 10. Information architecture and growth
+- Keep a clear hierarchy: category → calculator → guide → related tools.
+- Ensure important calculators are reachable through navigation/internal links and are not orphaned.
+- Use breadcrumbs and structured data only when accurate.
+- Consolidate overlapping pages when they do not serve distinct intents.
+- Create new categories only when the topic cluster is substantial enough to justify them.
+- Periodically identify pages with low value, duplication, or no demand and decide whether to improve, consolidate, or retire them carefully.
+
+### 11. Brand and trust
+- Keep YardCompute visually consistent and professional.
+- Use truthful company/site descriptions and contact information; never invent business credentials.
+- Maintain a clear methodology/About explanation.
+- Consider a transparent editorial/calculation methodology page when the site has enough content to justify it.
+- Keep branding independent from competitors and periodically review trademark/copyright risks before major brand expansion.
+
+### 12. Monetization UX
+When ads are eventually introduced:
+- Preserve calculator usability as the top priority.
+- Never place ads where they can be mistaken for calculator controls, navigation, downloads, or results.
+- Avoid intrusive popups/popunders and deceptive placements.
+- Avoid excessive ad density that harms page experience.
+- Review ad placement against the current Google Publisher Policies before launch and after major layout changes.
+
+### 13. Professional release gate
+For significant releases, the assistant should check:
+- policy/monetization safety
+- user value and UX
+- accessibility
+- performance/Core Web Vitals impact
+- security/privacy impact
+- SEO/indexing/canonical/schema/internal-link impact
+- analytics impact
+- content/trust/legal impact
+- competitor/market signal
+- regression tests
+- production verification
+- rollback plan.
+
+Only after these checks should a change be classified NOW and implemented.
+
+### 14. Strategic principle
+The target is not “more pages” or “more keywords.” The target is a **useful, trusted, fast, accessible, technically reliable home-and-yard planning product** that can earn from search traffic and other legitimate revenue streams over time.
+
+The assistant should continuously ask:
+**Will this make YardCompute better for users, safer for Google/search, stronger as a product, and more capable of earning?**
+If the answer is not convincingly yes, defer or reject the change.
