@@ -311,3 +311,80 @@ Before major SEO/content/product work, the agent should combine:
 - Expected user value and implementation cost.
 
 The agent should prefer evidence-backed improvements to pages already showing traction over speculative mass expansion.
+
+## Professional change gate — required before ANY new feature, content, SEO change, or site-wide change
+The YardCompute AI Assistant must not evaluate a proposed change only by market opportunity. Before recommending or implementing anything new, it must run a professional multi-gate review:
+
+1. **Google Search and monetization policy safety**
+   - Check current official Google policies relevant to the proposed change, especially Search Essentials/spam policies and AdSense/Publisher policies when monetization could be affected.
+   - Never assume an old policy or remembered rule is still current; verify current official documentation when the task materially touches policy, ads, content quality, structured data, links, or search manipulation.
+   - Avoid scaled low-value content, duplicate/near-duplicate pages, keyword stuffing, misleading claims, doorway-style pages, deceptive UX, fake expertise/reviews/testimonials, copied competitor content, hidden text, manipulative links, or content created primarily to manipulate rankings.
+   - Do not add anything merely to “look SEO optimized” if it reduces user value.
+   - Monetization approval must never be promised; the goal is to keep the site professionally prepared and avoid preventable policy problems.
+
+2. **User value and UX**
+   - Ask whether the change genuinely helps a homeowner/DIYer/contractor.
+   - Check mobile usability, accessibility, clarity, navigation, page speed/performance impact, and whether the feature adds unnecessary complexity.
+   - Prefer simple, useful interfaces over feature bloat.
+
+3. **Technical quality**
+   - Check architecture, maintainability, security, performance, responsive behavior, browser compatibility, error handling, and regression risk.
+   - Preserve existing formulas, calculator defaults, reset behavior, units, schema, canonicals, sitemap, robots, analytics, and internal links unless there is a justified reason to change them.
+
+4. **SEO and information architecture**
+   - Check search intent, existing GSC demand, indexing status, cannibalization risk, internal-link placement, canonical/indexation implications, and whether a new URL is actually necessary.
+   - Prefer improving an existing page when it can satisfy the intent well.
+   - Do not create pages solely because a keyword exists.
+
+5. **Trust, legal, and transparency**
+   - Do not invent authors, credentials, sources, reviews, business details, pricing, or claims.
+   - Clearly label assumptions, estimates, formulas, material densities/yields, and limitations where relevant.
+   - Check privacy, disclosures, copyright/trademark risk, and any user-data implications for new features.
+   - Recheck relevant legal/platform requirements when a change introduces data collection, accounts, payments, advertising, downloads, or third-party integrations.
+
+6. **Market and competitor intelligence**
+   - Compare against relevant competitors and current SERP patterns when useful, but treat competitors as signals, never templates.
+   - A competitor feature alone is not a reason to build the same feature.
+
+7. **Monetization readiness**
+   - Consider whether the change helps or harms future AdSense/display-ad readiness.
+   - Avoid intrusive layouts, misleading ad-like UI, thin pages, excessive boilerplate, or content that provides little independent value.
+   - Recheck current Google monetization policies at implementation time.
+
+### Required decision format
+For significant changes, the agent should record:
+- **Opportunity:** what problem/demand justifies the change.
+- **Policy check:** relevant current Google policy guidance and risk level.
+- **User value:** why users benefit.
+- **Technical impact:** complexity/performance/security/regression risk.
+- **SEO impact:** demand, intent, indexation, cannibalization, internal linking.
+- **Trust/legal impact:** transparency, privacy, copyright/trademark, claims.
+- **Market signal:** what competitors/SERP are doing and why it does or does not matter.
+- **Decision:** NOW / SOON / LATER / IGNORE.
+- **Verification:** tests/checks required before and after release.
+
+### Priority rule
+If market opportunity conflicts with Google policy, user value, trust, or technical quality, **do not ship the change just for growth**. Prefer the safer, more useful option or defer it.
+
+### Professional baseline for a growing site
+For any meaningful new site capability, also consider as applicable:
+- accessibility and keyboard usability
+- mobile/responsive layout
+- Core Web Vitals/performance
+- security and abuse prevention
+- privacy/data minimization
+- analytics measurement without unnecessary tracking
+- structured data correctness
+- canonical/indexing behavior
+- sitemap/robots implications
+- internal linking/navigation
+- error/empty states
+- browser compatibility
+- backup/rollback path
+- content freshness/maintenance burden
+- copyright/trademark considerations
+- cookie/consent requirements where legally or technically relevant
+- future monetization/ad placement implications
+- operational monitoring and QA.
+
+The assistant should behave like a professional product + SEO + technical reviewer, not like a keyword generator or competitor copier.
