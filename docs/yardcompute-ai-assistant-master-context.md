@@ -196,3 +196,118 @@ The future YardCompute AI Assistant must:
 8. Prefer one safe batch over many repetitive edits.
 9. Ask the user only for actions requiring their account/approval.
 10. Never silently change DNS, security, credentials, or destructive settings.
+
+
+## Future strategic roadmap
+### Phase A — Foundation (DONE)
+- Site architecture, calculators, categories, guides, legal/trust pages.
+- Technical SEO, sitemap, robots, canonicals, schema, GA4.
+- Cloudflare/Git deployment.
+- Internal-link and calculator QA foundation.
+
+### Phase B — Early SEO traction (IN PROGRESS)
+- Let Google crawl recent changes before judging them.
+- Monitor impressions, clicks, queries, positions, and indexing status.
+- Strengthen pages already showing real search demand.
+- Build topic clusters around calculator families that begin gaining traction.
+- Fix indexing/orphan/technical issues only when evidence shows a problem.
+
+### Phase C — Topic authority (NEXT)
+- Expand only into calculator topics supported by search demand, SERP gaps, and a sensible cluster.
+- Build high-quality guides answering real pre-calculation questions.
+- Add useful calculator features only when they solve real user problems: package counts, waste, truckloads, multiple sections, supplier density/yield assumptions.
+- Improve trust and source/assumption transparency.
+- Strengthen category hubs and related-tool pathways.
+
+### Phase D — Product differentiation
+Potential differentiators to evaluate from actual user demand:
+- Better project-specific calculators instead of generic copies.
+- Clear assumptions and worked examples.
+- Multi-section project inputs where useful.
+- Material-ordering outputs such as bags, cubic yards, tons, and loads where appropriate.
+- Practical “what to buy” guidance.
+- Better internal project journeys: measure → calculate → order → read guide.
+- Optional cost inputs only where they add real value.
+- Saved/project features only if they justify their complexity.
+
+### Phase E — Monetization readiness
+Before ads/monetization:
+- Strong trust pages and transparent methodology.
+- No thin or duplicate AI content.
+- Good UX/mobile performance.
+- Useful original content.
+- No deceptive ad placement or misleading claims.
+- Recheck current Google monetization policies at implementation time.
+
+### Phase F — Scale
+- Expand into adjacent high-value home/yard calculator clusters.
+- Consider tools, comparisons, downloadable project summaries, or other product features only after demand is demonstrated.
+- Prune or merge pages that do not add distinct value.
+
+## Competitor intelligence and market watch
+Primary competitor watchlist:
+1. YardCompass — https://yard-compass.com/
+2. BackyardCalc — https://backyardcalc.com/
+3. YardTally — https://yardtally.net/
+4. ProjectCalc — https://projectcalc.app/
+
+Secondary discovery list:
+- YardFigure
+- CalcurHome
+- ProjectMeter
+- ProjectMetrica
+- Yard & Board
+- BackyardCalcs
+- Handy Tool Lab
+- Other relevant SERP competitors discovered during research.
+
+Track competitors for:
+- calculator count and new categories
+- new or updated guides
+- high-level page-intent/title patterns
+- UX features
+- Imperial/metric support
+- material/package outputs
+- cost/pricing features
+- source/assumption transparency
+- internal linking and category architecture
+- SERP/content patterns
+- meaningful differentiation.
+
+Competitor sites are intelligence sources, never templates. Never copy their wording, content, branding, layout, or distinctive feature implementation.
+
+## Market-driven decision rule
+When a competitor adds or changes a feature/topic:
+1. Detect the change.
+2. Check whether search demand and SERP evidence support it.
+3. Check YardCompute GSC/GA4/site data for related demand or gaps.
+4. Check for overlap/cannibalization with existing YardCompute pages.
+5. Estimate whether YardCompute can offer a genuinely useful differentiated version.
+6. Recommend a priority: NOW / SOON / LATER / IGNORE.
+7. Only then propose implementation, with normal QA and approval gates.
+
+A competitor change alone is never sufficient reason to build something.
+
+## Weekly strategic cycle
+A future scheduled YardCompute agent/report should cover:
+1. GSC performance changes.
+2. New query opportunities.
+3. Pages gaining or losing impressions/clicks.
+4. Indexing and technical warnings.
+5. Calculator QA results.
+6. Internal-link opportunities.
+7. Competitor changes.
+8. New market/search trends.
+9. Prioritized next actions: NOW / SOON / LATER / IGNORE.
+10. A short explanation of why each recommendation matters.
+
+## Future agent decision model
+Before major SEO/content/product work, the agent should combine:
+- YardCompute GSC and GA4 evidence.
+- Current site/repository state.
+- Search demand and SERP evidence.
+- Fresh competitor intelligence when practical.
+- Existing topic coverage and cannibalization risk.
+- Expected user value and implementation cost.
+
+The agent should prefer evidence-backed improvements to pages already showing traction over speculative mass expansion.
