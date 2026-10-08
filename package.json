@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "deploy": "wrangler deploy",
-    "preview": "wrangler dev"
+    "preview": "wrangler dev",
+    "gsc:evidence": "node scripts/gsc-evidence-bridge.js",
+    "test:gsc:evidence": "node --test scripts/gsc-evidence-bridge.test.js"
   },
   "devDependencies": {
     "wrangler": "^4.68.0"
