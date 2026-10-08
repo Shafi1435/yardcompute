@@ -1,0 +1,198 @@
+# YardCompute AI Assistant — Master Project Context
+
+## Purpose
+This file is the long-term operating memory/brief for an AI assistant that helps maintain YardCompute across conversations. It must preserve project history, completed work, mistakes, constraints, pending work, and the current roadmap so work does not restart from zero.
+
+## Project
+- Brand/domain: YardCompute / https://yardcompute.com
+- Audience: US homeowners, DIYers, and contractors.
+- Language: US English.
+- Primary units: Imperial; metric conversion is supported.
+- Main product: practical home/yard project calculators plus guides.
+- Repository: Shafi1435/yardcompute
+- Branch: main
+- Hosting/deployment: Cloudflare with Git/GitHub deployment.
+- Analytics: GA4.
+- Search performance: Google Search Console.
+
+## User working style
+- User is a complete beginner at website development.
+- Assistant should handle planning/technical work wherever possible.
+- User should only be asked to do account/permission/browser actions that the assistant cannot safely do.
+- User wants simple step-by-step instructions for user-side actions.
+- Avoid repeatedly asking “next?”; assume user is ready to continue unless a real decision is required.
+- Keep a clear roadmap and explicitly mark items DONE, PENDING, BLOCKED, or NOT STARTED.
+- Do not abandon unfinished roadmap items because a new issue appears.
+- Avoid unnecessary edits to a stable site.
+- User does not want to edit code manually when avoidable because mistakes are likely.
+- Main goal: build a professional, useful, trustworthy site that can rank and later monetize without creating avoidable Google/policy problems.
+
+## Original build direction
+Initial blueprint:
+- Next.js/TypeScript/Tailwind concept, Cloudflare Pages/Workers, Cloudflare DNS/CDN.
+- No database initially; calculators are client-side.
+- Launch small, then expand.
+- Standard calculator pages should have accurate formulas, examples, assumptions, FAQs, related tools, internal links, sitemap, robots, canonicals, GSC and GA4.
+
+## Major history / mistakes to remember
+1. Early Cloudflare/GitHub setup had permission/confusion. GitHub Cloudflare app was eventually installed correctly. Do not uninstall/suspend/reconfigure working integration casually.
+2. Cloudflare UI caused confusion around country/state fields, WAF/security settings, www/root domain, and deployment processing. Do not make DNS/security changes without verifying current state.
+3. User initially had issues with calculator Reset behavior and inconsistent default/autofill values. These must be regression-tested when calculator code changes.
+4. A wall-framing calculator had an unused “Opening width” input/formula mismatch. It was fixed in commit 962baf77... .
+5. A large calculator expansion created/merged 50 calculators. Sitemap reached 78 URLs. Internal-link audit found 50/50 calculators category-linked; 3 broken guide→calculator links were fixed. Avoid duplicating calculators or creating orphan pages.
+6. Search Console had quota/indexing-processing confusion. User has submitted indexing requests and sitemap. Do not repeatedly resubmit unnecessarily; inspect current status first.
+7. User was worried about duplicate options/footer/deployment issues. Always verify live output after bulk changes.
+8. User does not want fake owner identity/contact details. Do not invent names, emails, credentials, or business claims.
+9. User wants monetization/policy safety from the beginning: no deceptive content, fake expertise, copied competitor content, keyword stuffing, or mass low-value pages.
+10. Competitor similarity: YardCompass is a real, active site with a similar home/yard calculator concept. Do not copy its wording, structure, branding, or content. YardCompute must remain independently branded and useful.
+11. Logo implementation was deliberately postponed. Do NOT change the current logo unless the user explicitly asks or supplies the final package and asks to implement it.
+
+## Current site scale
+- About 50 calculators.
+- 7 categories.
+- 19 guides.
+- Key routes include home, about, contact, privacy-policy, terms, disclaimer, calculator category hubs, calculator pages, and guides.
+- Technical SEO has generally been audited as good: canonicals, titles/descriptions, schema, sitemap/robots, and noindex issues were checked.
+- Site-wide OG/social image injection exists in src/worker.js.
+- www.yardcompute.com redirects 301 to yardcompute.com.
+
+## Completed SEO/content work
+- Homepage “Most Popular Calculators” section added.
+- Homepage trust/explanation section added.
+- Grass Seed Calculator optimized.
+- Driveway Gravel Calculator optimized.
+- Deck Board Calculator optimized.
+- Wall Framing Calculator optimized.
+- Fence Post Concrete Calculator optimized for “how much concrete do I need to set a fence post?”
+- Post Hole Concrete Calculator optimized for “concrete calculator for post holes”.
+- Deck Board Spacing Calculator optimized for “distance between deck boards”.
+- Fence Post Spacing Calculator optimized for “fence post distance”.
+- French Drain Gravel Calculator optimized.
+- Fence-post concrete guide optimized for “how much concrete to set a fence post”.
+- Driveway gravel guide optimized for driveway gravel query cluster.
+- Category hub internal links added for important calculators.
+- About page strengthened with honest methodology/trust language and AI-assisted drafting disclosure.
+- OG image created at public/assets/og-image.svg.
+- Metric conversions are supported in app.js.
+
+## Known important SEO signals
+Recent settled GSC data (2026-09-07 to 2026-10-04) showed:
+- grass seed calculator: about position 4, 1 impression in latest query/page slice.
+- deck board calculator had previously reached around position 10.
+- wall framing calculator had previously reached around position 11.
+- driveway gravel terms were mostly positions 50–90s.
+- concrete post-hole terms appeared around positions 34–80s.
+- French drain gravel around position 62.
+- fence post distance around position 73.
+- deck board distance around position 93.
+These are opportunity signals, not guarantees. New edits need time before judging.
+
+## Sitemap/indexing history
+- Sitemap previously reached 78 URLs after calculator expansion.
+- GSC showed most sitemap URLs indexed, with some discovered/not-indexed or processing.
+- Do not assume “processing” means broken.
+- Check GSC before taking indexing actions.
+- Avoid wasting quota with repeated requests.
+
+## Branding/logo status
+- User has a preferred newer V3 logo concept: leaf-shaped calculator icon, green Yard, navy Compute, clean horizontal layout.
+- User has a package intended to contain SVG/PNG logo, transparent logo, icon, favicon sizes, social share image, and metadata cleanup.
+- The package was not yet implemented because the user had not uploaded the actual ZIP/package in the usable project context.
+- A Claude Artifact URL was supplied previously but could not be directly downloaded/used as a ZIP.
+- Treat logo implementation as PENDING until the actual package is available and user asks to implement.
+- Do not replace the logo based only on a remembered image.
+
+## Technical assets already changed
+- src/worker.js: www→apex 301 redirect and OG/social image tags.
+- public/assets/og-image.svg created.
+- public/assets/app.js: calculator framework + metric conversion support.
+- Multiple calculator and guide HTML files have been updated for SEO and internal linking.
+- Do not overwrite calculator pages wholesale without first fetching the current file and preserving existing functionality.
+
+## Calculator QA rules
+Every calculator change should be checked for:
+- Inputs and labels match formula variables.
+- Defaults are useful, not blank unless blank is intentional.
+- Reset returns to expected defaults.
+- Units and metric conversion work.
+- Results are numerically correct.
+- Edge cases do not produce NaN/Infinity.
+- Example on page matches calculator result.
+- Related links are valid.
+- No duplicate UI blocks.
+- Mobile layout remains usable.
+- No orphan calculator.
+- Live deployment is verified after significant changes.
+
+## SEO operating rules
+- Prefer improving existing pages with real GSC demand before creating unnecessary new pages.
+- Use search-intent language naturally; do not keyword-stuff.
+- Keep one clear primary intent per page.
+- Build topic clusters: category → calculator → guide → related calculator.
+- Avoid cannibalization; scan before creating overlapping pages.
+- Keep titles/meta concise and descriptive.
+- Preserve canonicals and schema.
+- Do not create thin AI mass content.
+- Do not copy competitor wording.
+- Content should be useful even without ads.
+- Never make fake expertise, fake reviews, fake testimonials, fake authors, fake business claims, or fabricated citations.
+- Never promise rankings or indexing.
+
+## Safety / approval policy for future AI agent
+LOW-RISK actions can be automated:
+- read repo/GSC data
+- audit links/metadata/sitemap
+- generate reports
+- identify SEO opportunities
+- run tests
+- prepare proposed edits
+- monitor deployments
+
+HIGH-RISK actions should require explicit user approval unless a future trusted automation policy is deliberately enabled:
+- DNS changes
+- Cloudflare security changes
+- deleting files/pages
+- major site-wide rewrites
+- publishing large batches of content
+- production deployment when tests fail
+- account/credential changes
+- external submissions that could consume quotas or create irreversible effects.
+
+## Current roadmap state
+DONE:
+- Core site launched.
+- Calculator expansion to about 50 calculators.
+- Category structure.
+- Guides collection.
+- Technical SEO foundations.
+- GA4.
+- Sitemap/robots/canonical/schema foundation.
+- Internal linking audit/fixes.
+- Major GSC opportunity optimizations.
+- Homepage trust/popular calculator improvements.
+- OG image and www redirect.
+- Basic technical/security review.
+
+PENDING / CONTINUE:
+1. Let recent SEO edits crawl and accumulate enough GSC data.
+2. Continue targeted GSC-based optimization, not random edits.
+3. Audit sitemap vs actual public pages when useful.
+4. Audit orphan/internal-link opportunities when useful.
+5. Continue calculator regression testing after meaningful code changes.
+6. Implement final logo package only after actual files are available and user asks.
+7. Build the YardCompute AI Assistant/Agent around this master context.
+8. Later expand SEO/content based on measured demand.
+9. Later monetization readiness review; do not rush ads before site quality/trust is solid.
+
+## Agent behavior
+The future YardCompute AI Assistant must:
+1. Load this file before planning work.
+2. Treat this file as project memory, not as a license to make risky changes.
+3. Before editing, inspect current repository state; never rely only on old assumptions.
+4. Maintain a change log with DONE/PENDING/BLOCKED.
+5. Preserve previous functionality.
+6. Verify after changes.
+7. Report exactly what changed, why, tests performed, and what remains.
+8. Prefer one safe batch over many repetitive edits.
+9. Ask the user only for actions requiring their account/approval.
+10. Never silently change DNS, security, credentials, or destructive settings.
