@@ -20,6 +20,7 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           import re
+          import struct
           import xml.etree.ElementTree as ET
 
           root = Path(".")
@@ -44,5 +45,28 @@ jobs:
                       # known branding asset paths as hard failures.
                       if any(name in target for name in ("favicon", "yardcompute-logo", "social-share", "apple-touch-icon")):
                           raise SystemExit(f"Missing referenced branding asset in {html}: {target}")
+          expected_pngs = {
+              "public/assets/favicon-16.png": (16, 16),
+              "public/assets/favicon-32.png": (32, 32),
+              "public/assets/favicon-48.png": (48, 48),
+              "public/assets/apple-touch-icon.png": (180, 180),
+              "public/assets/android-192.png": (192, 192),
+              "public/assets/android-512.png": (512, 512),
+              "public/assets/social-share-1200x630.png": (1200, 630),
+              "public/assets/yardcompute-logo-600.png": (600, 143),
+              "public/assets/yardcompute-logo-1200.png": (1200, 287),
+              "public/assets/yardcompute-logo-transparent-1200.png": (1200, 287),
+          }
+          for name, dimensions in expected_pngs.items():
+              path = root / name
+              if not path.is_file():
+                  raise SystemExit(f"Missing PNG asset: {name}")
+              data = path.read_bytes()
+              if data[:8] != bytes([137, 80, 78, 71, 13, 10, 26, 10]):
+                  raise SystemExit(f"Invalid PNG signature: {name}")
+              width, height = struct.unpack(">II", data[16:24])
+              if (width, height) != dimensions:
+                  raise SystemExit(f"Unexpected PNG dimensions for {name}: {width}x{height}")
+              print(f"PNG OK: {name} ({width}x{height})")
           print(f"HTML files scanned: {len(html_files)}")
           PY
