@@ -13,8 +13,9 @@ assert.notEqual(start, -1, "calculator configuration block must exist");
 assert.notEqual(end, -1, "calculator configuration block must have a closing boundary");
 
 const configSource = source.slice(start, end + 3).replace("const configs=", "module.exports=");
-const configs = {};
-vm.runInNewContext(configSource, { module: { exports: configs } });
+const context = { module: { exports: {} } };
+vm.runInNewContext(configSource, context);
+const configs = context.module.exports;
 
 test("all calculator configurations return results for their documented default values", () => {
   const entries = Object.entries(configs);
