@@ -38,9 +38,9 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy
 
-      - name: Verify production homepage and key calculators
+      - name: Verify deployed Worker homepage and key calculators
         env:
-          SITE_URL: https://yardcompute.com
+          SITE_URL: https://yardcompute.shafaya786.workers.dev
         run: |
           set -euo pipefail
           for path in / /fence-calculators/fence-picket-spacing-calculator/ /gravel-calculators/french-drain-gravel-calculator/ /landscaping-calculators/grass-seed-calculator/; do
