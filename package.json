@@ -6,7 +6,9 @@
     "deploy": "wrangler deploy",
     "preview": "wrangler dev",
     "gsc:evidence": "node scripts/gsc-evidence-bridge.js",
-    "test:gsc:evidence": "node --test scripts/gsc-evidence-bridge.test.js"
+    "test:gsc:evidence": "node --test scripts/gsc-evidence-bridge.test.js",
+    "test:calculators": "node --test scripts/calculator-smoke.test.js",
+    "test": "node --test scripts/*.test.js"
   },
   "devDependencies": {
     "wrangler": "^4.68.0"
