@@ -52,3 +52,16 @@ test("fence picket spacing calculator keeps the 100-foot example within the 2-in
   assert.equal(result[2][1], "1.966 in");
   assert.ok(Number.parseFloat(result[2][1]) <= 2);
 });
+
+
+test("pea gravel cost calculator estimates volume, tons, and material cost from the entered price", () => {
+  const result = configs["pea-gravel-calculator"].calc({
+    length: 20, width: 10, depth: 2, density: 105, waste: 10, pricePerTon: 50
+  });
+  assert.equal(result[0][1], "200.00 sq ft");
+  assert.equal(result[1][1], "33.33 cu ft");
+  assert.equal(result[2][1], "36.67 cu ft");
+  assert.equal(result[3][1], "1.36 yd³");
+  assert.equal(result[4][1], "1.93 tons");
+  assert.equal(result[5][1], "$96.25");
+});
