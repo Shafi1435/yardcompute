@@ -54,6 +54,23 @@ const cases = [
   ["river-rock-calculator", {}, { "Project area": "200.00 sq ft", "Volume with waste": "36.67 cu ft", "Cubic yards": "1.36 yd³", "Estimated weight": "1.83 tons" }, ["36.67 cu ft", "1.36 cubic yards", "1.83 tons"]],
   ["river-rock-calculator", { depth: 3 }, { "Volume with waste": "55.00 cu ft", "Cubic yards": "2.04 yd³", "Estimated weight": "2.75 tons" }, ["55 cu ft", "2.04 cubic yards", "2.75 tons"]],
   ["paver-sand-calculator", {}, { "Project area": "240.00 sq ft", "Sand with waste": "22.00 cu ft", "Cubic yards": "0.81 yd³" }, ["240 sq ft", "22 cu ft", "0.81 cubic yards"]],
+  ["drywall-calculator", {}, { "Net wall area": "408.00 sq ft", "Area with waste": "448.80 sq ft", "Sheets to order": "15 sheets" }, ["408 sq ft", "448.8 sq ft", "15 sheets"]],
+  ["drywall-calculator", { sheetArea: 48 }, { "Sheets to order": "10 sheets" }, ["10 sheets"]],
+  ["flooring-calculator", {}, { "Floor area": "192.00 sq ft", "Area to order": "211.20 sq ft", "Boxes to order": "11 boxes" }, ["192 sq ft", "211.2 sq ft", "11 boxes"]],
+  ["paint-calculator", {}, { "Gross wall area": "352.00 sq ft", "Net paint area": "312.00 sq ft", "Paint to order": "2 gallons" }, ["352 sq ft", "312 sq ft", "2 gallons"]],
+  ["paint-calculator", { length: 16, width: 14 }, { "Net paint area": "440.00 sq ft", "Paint to order": "3 gallons" }, ["440 sq ft", "3 gallons"]],
+  ["stair-stringer-calculator", {}, { "Risers": "13 risers", "Actual riser height": "7.38 in", "Total run": "120.00 in", "Approx. stringer length": "12.81 ft" }, ["13 risers", "7.38 in", "120 in", "12.81 ft"]],
+  ["tile-calculator", {}, { "Project area": "120.00 sq ft", "Tiles to order": "132 tiles" }, ["120 sq ft", "132 tiles"]],
+  ["tile-calculator", { tileWidth: 24 }, { "Tiles to order": "66 tiles" }, ["66 tiles"]],
+  ["raised-bed-soil-calculator", {}, { "Total bed area": "32.00 sq ft", "Soil volume": "35.20 cu ft", "Cubic yards": "1.30 yd³" }, ["35.2 cu ft", "1.30 cubic yards"]],
+  ["raised-bed-soil-calculator", { beds: 3 }, { "Soil volume": "105.60 cu ft", "Cubic yards": "3.91 yd³" }, ["105.6 cu ft", "3.91 cubic yards"]],
+  ["retaining-wall-calculator", {}, { "Courses": "6 courses", "Blocks to order": "119 blocks", "Caps to order": "20 caps", "Base aggregate volume": "26.40 cu ft", "Base aggregate": "0.98 yd³" }, ["18 blocks", "6 courses", "119 with 10% extra", "20 caps", "26.4 cu ft", "0.98 cubic yards"]],
+  ["sod-calculator", {}, { "Lawn area": "800.00 sq ft", "Sod area to order": "880 sq ft" }, ["800 sq ft", "880 sq ft"]],
+  ["topsoil-calculator", {}, { "Topsoil with waste": "73.33 cu ft", "Cubic yards": "2.72 yd³" }, ["73.33 cu ft", "2.72 cubic yards"]],
+  ["topsoil-calculator", { depth: 6 }, { "Topsoil with waste": "110.00 cu ft", "Cubic yards": "4.07 yd³" }, ["110 cu ft", "4.07 cubic yards"]],
+  ["paver-edge-restraint-calculator", {}, { "Project perimeter": "64.00 ft", "Edge restraint with waste": "70.40 linear ft", "Suggested order quantity": "71 linear ft" }, ["64 ft", "70.4 ft", "71 linear feet"]],
+  ["paver-edge-restraint-calculator", { length: 10, width: 12 }, { "Project perimeter": "44.00 ft", "Edge restraint with waste": "48.40 linear ft" }, ["44 ft", "48.4 ft"]],
+  ["permeable-paver-calculator", {}, { "Project area": "240.00 sq ft", "Pavers to order": "1056 pavers", "Base aggregate volume": "176.00 cu ft", "Base aggregate": "6.52 yd³" }, ["960 pavers", "1,056", "176 cu ft", "6.52 cubic yards"]],
 ];
 
 for (const [key, overrides, expected, phrases] of cases) {
