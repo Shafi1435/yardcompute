@@ -47,6 +47,25 @@ Initial blueprint:
 10. Competitor similarity: YardCompass is a real, active site with a similar home/yard calculator concept. Do not copy its wording, structure, branding, or content. YardCompute must remain independently branded and useful.
 11. Logo implementation was deliberately postponed. Do NOT change the current logo unless the user explicitly asks or supplies the final package and asks to implement it.
 
+## Change log — 2026-11-14 (Claude session: content quality / AdSense readiness pass)
+Audit found 27 of 50 calculator pages using generic template text (no real formula, no real example, identical FAQs) — the main low-value-content risk for AdSense.
+
+DONE:
+- PR #36: fence rail, fence picket, deck joist, deck joist spacing, deck screw pages rewritten; worker.js now injects the PNG social image only when a page has none (was injecting og-image.svg on every page; homepage had two og:image tags).
+- PR #37: concrete bag/column/footing/patio, deck footing, deck materials, privacy fence materials, gravel bag/tonnage, river rock, paver sand rewritten.
+  - Bug fix: deck materials joists now run perpendicular to decking (16x12 default: 13 joists / 171.6 lf, was 10 / 176).
+  - Bug fix: all calculator Math.ceil calls ignore floating-point error < 1e-9 (gravel bag default showed 111 for 110; sod 881 for 880).
+- PR #38: drywall, flooring, paint, stair stringer, tile, raised bed soil, retaining wall, sod, topsoil, paver edge restraint, permeable paver rewritten; Home Calculators hub expanded + schema.
+  - Bug fix: retaining wall base aggregate ignored trench width; new "Base trench width" input (default 24 in).
+- Batch 4: expanded short core pages (concrete, concrete driveway, gravel, fence, paver base/sand, mulch) by adding sections/FAQs — existing GSC-optimized text kept. Fence calculator default length changed from 1 ft to 100 ft to match its page example.
+- scripts/calculator-examples.test.js: every worked example on rewritten pages is checked against calculator output (63 tests). Add a case whenever a page example changes.
+
+PENDING:
+- Contact page has no contact method. User will create an email (recommended: Cloudflare Email Routing contact@yardcompute.com -> personal inbox) and then it gets added to Contact + Privacy Policy. Do not publish the personal Gmail.
+- Privacy Policy needs advertising/AdSense cookie disclosure — add at AdSense application time.
+- Remaining shorter pages (~350–390 words, already have real formulas): mulch bag, fence material, deck board spacing, fence post spacing, paver calculator — expand only with GSC evidence; some were deliberately optimized for specific queries.
+- Wait 2–4 weeks for recrawl, then review GSC before the AdSense pre-application audit.
+
 ## Current site scale
 - About 50 calculators.
 - 7 categories.
