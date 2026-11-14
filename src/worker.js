@@ -116,16 +116,25 @@ export default {
 
     let response = await env.ASSETS.fetch(new Request(url, request));
 
-    // Add one consistent social preview to every HTML page without editing dozens of page files.
+    // Add one consistent social preview to HTML pages that do not define their own image.
+    // Social platforms (Facebook, WhatsApp, X, LinkedIn) do not render SVG previews, so use the PNG.
     if (response.ok && (response.headers.get("content-type") || "").includes("text/html")) {
-      const html = await response.text();
-      const ogTags = `
-<meta property="og:image" content="https://yardcompute.com/assets/og-image.svg">
+      let html = await response.text();
+      if (!html.includes('property="og:image"')) {
+        const ogTags = `
+<meta property="og:image" content="https://yardcompute.com/assets/social-share-1200x630.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://yardcompute.com/assets/og-image.svg">`;
-      response = new Response(html.replace("</head>", ogTags + "</head>"), response);
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="YardCompute home and yard project calculators">
+<meta name="twitter:image" content="https://yardcompute.com/assets/social-share-1200x630.png">`;
+        html = html.replace('<meta name="twitter:card" content="summary">', '<meta name="twitter:card" content="summary_large_image">');
+        if (!html.includes('name="twitter:card"')) {
+          html = html.replace("</head>", '<meta name="twitter:card" content="summary_large_image"></head>');
+        }
+        html = html.replace("</head>", ogTags + "</head>");
+      }
+      response = new Response(html, response);
     }
 
     const headers = new Headers(response.headers);
