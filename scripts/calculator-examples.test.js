@@ -86,6 +86,10 @@ const cases = [
   ["mulch-calculator", {}, { "Mulch": "40.00 cu ft", "With 10% waste": "44.00 cu ft", "Cubic yards": "1.63 yd³" }, ["44 cu ft", "1.63 cubic yards"]],
   ["mulch-calculator", { depth: 2 }, { "With 10% waste": "29.33 cu ft", "Cubic yards": "1.09 yd³" }, ["29.33 cu ft", "1.09 cubic yards"]],
   ["mulch-calculator", { length: 4, width: 50 }, { "With 10% waste": "55.00 cu ft", "Cubic yards": "2.04 yd³" }, ["55 cu ft", "2.04 cubic yards"]],
+  ["grass-seed-calculator", {}, { "Lawn area": "800.00 sq ft", "Base seed": "4.00 lb", "Seed to order": "4.40 lb" }, ["4.4 lb", "218 lb per acre", "174.2 lb"]],
+  ["fence-panel-calculator", {}, { "Fence panels": "13 panels", "Panels to order": "15 panels", "Posts": "14 posts" }, ["13 panels, 14 posts", "17 panels, 18 posts"]],
+  ["fence-panel-calculator", { length: 50, panel: 6 }, { "Fence panels": "9 panels", "Posts": "10 posts" }, ["9 panels, 10 posts"]],
+  ["fence-gate-calculator", {}, { "Gate area": "24.00 sq ft", "Pickets without waste": "9 pickets", "Pickets to order": "10 pickets" }, ["24 square feet", "10 pickets"]],
 ];
 
 for (const [key, overrides, expected, phrases] of cases) {
