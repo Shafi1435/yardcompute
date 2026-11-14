@@ -71,6 +71,21 @@ const cases = [
   ["paver-edge-restraint-calculator", {}, { "Project perimeter": "64.00 ft", "Edge restraint with waste": "70.40 linear ft", "Suggested order quantity": "71 linear ft" }, ["64 ft", "70.4 ft", "71 linear feet"]],
   ["paver-edge-restraint-calculator", { length: 10, width: 12 }, { "Project perimeter": "44.00 ft", "Edge restraint with waste": "48.40 linear ft" }, ["44 ft", "48.4 ft"]],
   ["permeable-paver-calculator", {}, { "Project area": "240.00 sq ft", "Pavers to order": "1056 pavers", "Base aggregate volume": "176.00 cu ft", "Base aggregate": "6.52 yd³" }, ["960 pavers", "1,056", "176 cu ft", "6.52 cubic yards"]],
+  ["concrete-driveway-calculator", {}, { "Driveway area": "480.00 sq ft", "Base concrete": "200.00 cu ft", "Order volume": "220.00 cu ft", "Cubic yards": "8.15 yd³" }, ["480 sq ft", "220 cu ft", "8.15 cubic yards"]],
+  ["concrete-driveway-calculator", { width: 20 }, { "Cubic yards": "13.58 yd³" }, ["13.58 cubic yards"]],
+  ["concrete-driveway-calculator", { depth: 6 }, { "Base concrete": "240.00 cu ft", "Cubic yards": "9.78 yd³" }, ["240 cu ft", "9.78 cubic yards"]],
+  ["concrete-calculator", { length: 12, width: 12 }, { "Concrete": "48.00 cu ft", "Approx. cubic yards": "1.96 yd³" }, ["48 cu ft", "1.96 cubic yards"]],
+  ["concrete-calculator", { length: 3, width: 30 }, { "Concrete": "30.00 cu ft", "Approx. cubic yards": "1.22 yd³" }, ["30 cu ft", "1.22 cubic yards"]],
+  ["gravel-calculator", {}, { "Gravel volume": "50.00 cu ft", "With 10% waste": "55.00 cu ft", "Estimated weight": "2.89 tons" }, ["55 cu ft", "2.04 cubic yards", "2.89 tons"]],
+  ["gravel-calculator", { length: 4, width: 40 }, { "Gravel volume": "40.00 cu ft", "With 10% waste": "44.00 cu ft", "Estimated weight": "2.31 tons" }, ["44 cu ft", "2.31 tons"]],
+  ["fence-calculator", {}, { "Fence sections": "13 sections", "Posts": "14 posts" }, ["13 sections and 14 posts"]],
+  ["fence-calculator", { length: 150 }, { "Fence sections": "19 sections", "Posts": "20 posts" }, ["19 sections and 20 posts"]],
+  ["fence-calculator", { length: 150, spacing: 6 }, { "Fence sections": "25 sections", "Posts": "26 posts" }, ["25 sections and 26 posts"]],
+  ["paver-base-sand-calculator", {}, { "Base volume with waste": "132.00 cu ft", "Bedding sand with waste": "22.00 cu ft" }, ["132.00 cubic feet", "22.00 cubic feet"]],
+  ["paver-base-sand-calculator", { length: 10, width: 14, baseDepth: 4 }, { "Base volume with waste": "51.33 cu ft", "Base volume": "1.90 yd³", "Bedding sand with waste": "12.83 cu ft", "Bedding sand volume": "0.48 yd³" }, ["51.33 cu ft", "1.90 cubic yards", "12.83 cu ft", "0.48 cubic yards"]],
+  ["mulch-calculator", {}, { "Mulch": "40.00 cu ft", "With 10% waste": "44.00 cu ft", "Cubic yards": "1.63 yd³" }, ["44 cu ft", "1.63 cubic yards"]],
+  ["mulch-calculator", { depth: 2 }, { "With 10% waste": "29.33 cu ft", "Cubic yards": "1.09 yd³" }, ["29.33 cu ft", "1.09 cubic yards"]],
+  ["mulch-calculator", { length: 4, width: 50 }, { "With 10% waste": "55.00 cu ft", "Cubic yards": "2.04 yd³" }, ["55 cu ft", "2.04 cubic yards"]],
 ];
 
 for (const [key, overrides, expected, phrases] of cases) {
