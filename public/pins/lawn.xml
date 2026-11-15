@@ -5,7 +5,7 @@
 <link>https://yardcompute.com/</link>
 <description>Grass seed, sod, mulch, topsoil, gravel and river rock calculators.</description>
 <language>en-us</language>
-<lastBuildDate>Sun, 15 Nov 2026 04:13:54 +0000</lastBuildDate>
+<lastBuildDate>Sun, 15 Nov 2026 08:49:02 +0000</lastBuildDate>
 <item>
 <title>How Much Grass Seed Do I Need? (Chart + Free Calculator)</title>
 <link>https://yardcompute.com/landscaping-calculators/grass-seed-calculator/</link>
@@ -23,6 +23,15 @@
 <pubDate>Sun, 15 Nov 2026 00:00:00 +0000</pubDate>
 <enclosure url="https://yardcompute.com/assets/pins/gravel-3in-chart.png" length="105657" type="image/png"/>
 <media:content url="https://yardcompute.com/assets/pins/gravel-3in-chart.png" medium="image" type="image/png" width="1000" height="1500"/>
+</item>
+<item>
+<title>How Much Mulch Do I Need? Cubic Yards Chart by Bed Size</title>
+<link>https://yardcompute.com/landscaping-calculators/mulch-calculator/</link>
+<description>How many cubic yards of mulch do you need? See amounts for garden beds from 50 to 500 sq ft at 2 and 3 inches deep, with 10% extra, then use the free mulch calculator for your exact beds.</description>
+<guid isPermaLink="false">yardcompute-pin-mulch-cubic-yards-chart</guid>
+<pubDate>Sun, 15 Nov 2026 00:00:00 +0000</pubDate>
+<enclosure url="https://yardcompute.com/assets/pins/mulch-cubic-yards-chart.png" length="97818" type="image/png"/>
+<media:content url="https://yardcompute.com/assets/pins/mulch-cubic-yards-chart.png" medium="image" type="image/png" width="1000" height="1500"/>
 </item>
 </channel>
 </rss>

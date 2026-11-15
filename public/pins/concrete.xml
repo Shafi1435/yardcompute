@@ -5,7 +5,7 @@
 <link>https://yardcompute.com/</link>
 <description>Slabs, patios, driveways, footings and post holes: how much concrete you need.</description>
 <language>en-us</language>
-<lastBuildDate>Sun, 15 Nov 2026 04:13:54 +0000</lastBuildDate>
+<lastBuildDate>Sun, 15 Nov 2026 08:49:02 +0000</lastBuildDate>
 <item>
 <title>How Many Bags of Concrete for a Slab? 80 lb Bag Chart</title>
 <link>https://yardcompute.com/concrete-calculators/concrete-bag-calculator/</link>
@@ -14,6 +14,15 @@
 <pubDate>Sun, 15 Nov 2026 00:00:00 +0000</pubDate>
 <enclosure url="https://yardcompute.com/assets/pins/concrete-bags-4in-slab.png" length="114364" type="image/png"/>
 <media:content url="https://yardcompute.com/assets/pins/concrete-bags-4in-slab.png" medium="image" type="image/png" width="1000" height="1500"/>
+</item>
+<item>
+<title>How Much Concrete per Post Hole? 80 lb Bag Chart by Hole Size</title>
+<link>https://yardcompute.com/concrete-calculators/post-hole-concrete-calculator/</link>
+<description>How many 80 lb bags of concrete does a post hole take? This chart shows bags for one hole and for 10 holes at common diameters and depths, with 10% extra. The free post hole calculator handles any size.</description>
+<guid isPermaLink="false">yardcompute-pin-post-hole-concrete-sizes</guid>
+<pubDate>Sun, 15 Nov 2026 00:00:00 +0000</pubDate>
+<enclosure url="https://yardcompute.com/assets/pins/post-hole-concrete-sizes.png" length="93801" type="image/png"/>
+<media:content url="https://yardcompute.com/assets/pins/post-hole-concrete-sizes.png" medium="image" type="image/png" width="1000" height="1500"/>
 </item>
 </channel>
 </rss>

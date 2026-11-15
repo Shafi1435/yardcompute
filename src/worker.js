@@ -78,6 +78,7 @@ const SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://yardcompute.com/guides/paver-calculation/</loc></url>
   <url><loc>https://yardcompute.com/guides/paver-base-sand-calculation/</loc></url>
   <url><loc>https://yardcompute.com/guides/concrete-order-quantity/</loc></url>
+  <url><loc>https://yardcompute.com/guides/measure-concrete-thickness/</loc></url>
 </urlset>`;
 
 export default {
