@@ -61,7 +61,7 @@ DONE:
 - scripts/calculator-examples.test.js: every worked example on rewritten pages is checked against calculator output (63 tests). Add a case whenever a page example changes.
 
 PENDING:
-- Contact page has no contact method. User will create an email (recommended: Cloudflare Email Routing contact@yardcompute.com -> personal inbox) and then it gets added to Contact + Privacy Policy. Do not publish the personal Gmail.
+- DONE 2026-11-15: contact@yardcompute.com (Cloudflare Email Routing -> owner inbox) added to the Contact page and Privacy Policy (new "Emails you send us" section). Never publish the owner's personal Gmail.
 - Privacy Policy needs advertising/AdSense cookie disclosure — add at AdSense application time.
 - Remaining shorter pages (~350–390 words, already have real formulas): mulch bag, fence material, deck board spacing, fence post spacing, paver calculator — expand only with GSC evidence; some were deliberately optimized for specific queries.
 - Wait 2–4 weeks for recrawl, then review GSC before the AdSense pre-application audit.
