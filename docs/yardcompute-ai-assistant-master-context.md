@@ -75,7 +75,7 @@ PENDING:
   concrete -> https://yardcompute.com/pins/concrete.xml (Concrete Projects & Calculators)
   pavers -> https://yardcompute.com/pins/pavers.xml (Paver Patio & Walkway Ideas)
   lawn -> https://yardcompute.com/pins/lawn.xml (Lawn, Garden & Landscaping)
-- Pinterest site verification tag (`p:domain_verify`): PENDING from the owner. When received, add it to the <head> of public/index.html only.
+- Pinterest site verification: DONE 2026-11-15 (tag in public/index.html <head>, PR #42; Pinterest shows yardcompute.com as verified). Do not remove the p:domain_verify tag.
 - Rules for new pins: numbers computed from the calculator configs in public/assets/app.js (never typed by hand); link to an existing page; max 6 rows; one new image per pin (never re-pin the same image); give each pin today's date.
 - scripts/pinterest-feeds.test.js checks images, links and feed entries.
 
