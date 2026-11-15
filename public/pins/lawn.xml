@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<title>Lawn, Garden &amp; Landscaping | YardCompute</title>
+<link>https://yardcompute.com/</link>
+<description>Grass seed, sod, mulch, topsoil, gravel and river rock calculators.</description>
+<language>en-us</language>
+<lastBuildDate>Sun, 15 Nov 2026 04:13:54 +0000</lastBuildDate>
+<item>
+<title>How Much Grass Seed Do I Need? (Chart + Free Calculator)</title>
+<link>https://yardcompute.com/landscaping-calculators/grass-seed-calculator/</link>
+<description>Find out how many pounds of grass seed your lawn needs. This chart shows seed amounts for 5,000 sq ft and 1 acre at common label rates, and the free calculator works it out for your exact lawn size and seed bag.</description>
+<guid isPermaLink="false">yardcompute-pin-grass-seed-chart</guid>
+<pubDate>Sun, 15 Nov 2026 00:00:00 +0000</pubDate>
+<enclosure url="https://yardcompute.com/assets/pins/grass-seed-chart.png" length="102993" type="image/png"/>
+<media:content url="https://yardcompute.com/assets/pins/grass-seed-chart.png" medium="image" type="image/png" width="1000" height="1500"/>
+</item>
+<item>
+<title>How Much Gravel Do I Need? Cubic Yards and Tons Chart</title>
+<link>https://yardcompute.com/gravel-calculators/gravel-calculator/</link>
+<description>Gravel chart for common areas at 3 inches deep, in cubic yards and tons. Great for planning paths, patios and gravel beds. Use the free gravel calculator to enter your own size, depth and supplier density.</description>
+<guid isPermaLink="false">yardcompute-pin-gravel-3in-chart</guid>
+<pubDate>Sun, 15 Nov 2026 00:00:00 +0000</pubDate>
+<enclosure url="https://yardcompute.com/assets/pins/gravel-3in-chart.png" length="105657" type="image/png"/>
+<media:content url="https://yardcompute.com/assets/pins/gravel-3in-chart.png" medium="image" type="image/png" width="1000" height="1500"/>
+</item>
+</channel>
+</rss>

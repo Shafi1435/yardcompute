@@ -66,6 +66,27 @@ PENDING:
 - Remaining shorter pages (~350–390 words, already have real formulas): mulch bag, fence material, deck board spacing, fence post spacing, paver calculator — expand only with GSC evidence; some were deliberately optimized for specific queries.
 - Wait 2–4 weeks for recrawl, then review GSC before the AdSense pre-application audit.
 
+## Pinterest auto-publishing (added 2026-11-15)
+- Pins are defined in `scripts/pinterest/pins.json` (boards + pins). `python3 scripts/pinterest/build.py` renders `public/assets/pins/<id>.png` (1000x1500) and writes one RSS 2.0 feed per board at `public/pins/<board>.xml`.
+- Pinterest business account auto-publishes new feed items to the matching board within ~24 h (oldest first). Feeds must only link to yardcompute.com (claimed domain).
+- Feed URLs to connect in Pinterest (Settings -> Bulk create Pins / Claimed accounts -> Auto-publish -> Connect RSS feed), one per board:
+  fence -> https://yardcompute.com/pins/fence.xml (Fence Building Tips & Calculators)
+  deck -> https://yardcompute.com/pins/deck.xml (Deck Building Planning)
+  concrete -> https://yardcompute.com/pins/concrete.xml (Concrete Projects & Calculators)
+  pavers -> https://yardcompute.com/pins/pavers.xml (Paver Patio & Walkway Ideas)
+  lawn -> https://yardcompute.com/pins/lawn.xml (Lawn, Garden & Landscaping)
+- Pinterest site verification tag (`p:domain_verify`): PENDING from the owner. When received, add it to the <head> of public/index.html only.
+- Rules for new pins: numbers computed from the calculator configs in public/assets/app.js (never typed by hand); link to an existing page; max 6 rows; one new image per pin (never re-pin the same image); give each pin today's date.
+- scripts/pinterest-feeds.test.js checks images, links and feed entries.
+
+## Weekly maintenance routine (owner approved 2026-11-15: merge without asking if all checks pass)
+1. Pull main, run `npm test`, run the link/SEO audit; fix anything broken first.
+2. Add 5 new pins (spread across boards, prefer pages with GSC impressions) -> build.py -> tests.
+3. One content improvement: a striking-distance page or a new page for proven demand (deck size calculator, how to measure concrete thickness, driveway area calculator, gate cost calculator, sandbag calculator). New calculators need config + page + sitemap entry in src/worker.js + example tests.
+4. Never: fake authors/reviews, mass thin pages, Reddit or other posting as the owner, changes to Cloudflare/GSC settings, deleting pages without a redirect.
+5. Open a PR, wait for checks, squash-merge, confirm the deploy workflow succeeded, spot-check one live page.
+6. Append a dated entry to this change log (DONE / PENDING).
+
 ## Current site scale
 - About 50 calculators.
 - 7 categories.
