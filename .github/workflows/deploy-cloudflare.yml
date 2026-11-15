@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      indexnow_all:
+        description: "Submit every sitemap URL to IndexNow after deploy"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -19,6 +24,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -56,3 +63,17 @@ jobs:
             fi
           done
           echo "All production URL smoke checks passed."
+
+      - name: Notify IndexNow (Bing and other engines) about changed pages
+        continue-on-error: true
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          INDEXNOW_ALL: ${{ inputs.indexnow_all }}
+        run: |
+          if [ "${INDEXNOW_ALL}" = "true" ]; then
+            node scripts/indexnow-submit.js --all
+          elif [ -n "${BEFORE_SHA}" ] && [ "${BEFORE_SHA}" != "0000000000000000000000000000000000000000" ]; then
+            node scripts/indexnow-submit.js --changed "${BEFORE_SHA}" "${GITHUB_SHA}"
+          else
+            echo "IndexNow: no previous commit to compare; skipping."
+          fi
