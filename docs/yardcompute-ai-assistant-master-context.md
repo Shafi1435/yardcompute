@@ -92,6 +92,13 @@ PENDING:
 5. Open a PR, wait for checks, squash-merge, confirm the deploy workflow succeeded, spot-check one live page.
 6. Append a dated entry to this change log (DONE / PENDING).
 
+### Approved next project (owner said yes on 2026-11-15)
+Embeddable calculator widget for organic backlinks. Build it across the next weekly runs, one calculator at a time, starting with the most visited ones (fence post spacing, grass seed, paver, concrete bag, gravel):
+- A lightweight embed page per calculator (e.g. /embed/<calculator>/) that reuses app.js configs, has no site header/footer, is noindex, and shows a visible "Powered by YardCompute" link back to the full calculator page.
+- An "Embed this calculator" box on the calculator page with a copy-paste <iframe> snippet.
+- Never hide links, never add keyword-stuffed or hidden anchor text, never require the link to use specific keywords.
+- Add tests that every embed page loads its config and contains the attribution link.
+
 ## Current site scale
 - About 50 calculators.
 - 7 categories.
