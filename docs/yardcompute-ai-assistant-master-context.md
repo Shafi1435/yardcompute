@@ -79,6 +79,11 @@ PENDING:
 - Rules for new pins: numbers computed from the calculator configs in public/assets/app.js (never typed by hand); link to an existing page; max 6 rows; one new image per pin (never re-pin the same image); give each pin today's date.
 - scripts/pinterest-feeds.test.js checks images, links and feed entries.
 
+## IndexNow (added 2026-11-15)
+- Key file: public/fd7c4cd7e5dd768753241c24c7c2a142.txt (do not delete or rename).
+- The deploy workflow's last step runs scripts/indexnow-submit.js and submits pages changed by each push to api.indexnow.org (Bing, Yandex, Seznam, Naver...). Google does not use IndexNow.
+- Manual full submission: Actions -> "Deploy YardCompute to Cloudflare" -> Run workflow with "indexnow_all" ticked.
+
 ## Weekly maintenance routine (owner approved 2026-11-15: merge without asking if all checks pass)
 1. Pull main, run `npm test`, run the link/SEO audit; fix anything broken first.
 2. Add 5 new pins (spread across boards, prefer pages with GSC impressions) -> build.py -> tests.
