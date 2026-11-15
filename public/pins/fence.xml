@@ -5,7 +5,7 @@
 <link>https://yardcompute.com/</link>
 <description>Plan a wood fence: posts, rails, pickets, panels, gates and concrete.</description>
 <language>en-us</language>
-<lastBuildDate>Sun, 15 Nov 2026 04:13:54 +0000</lastBuildDate>
+<lastBuildDate>Sun, 15 Nov 2026 08:49:02 +0000</lastBuildDate>
 <item>
 <title>How Many Fence Posts Do I Need? Fence Post Chart</title>
 <link>https://yardcompute.com/guides/fence-post-spacing/</link>
@@ -14,6 +14,15 @@
 <pubDate>Sun, 15 Nov 2026 00:00:00 +0000</pubDate>
 <enclosure url="https://yardcompute.com/assets/pins/fence-posts-chart.png" length="101512" type="image/png"/>
 <media:content url="https://yardcompute.com/assets/pins/fence-posts-chart.png" medium="image" type="image/png" width="1000" height="1500"/>
+</item>
+<item>
+<title>How Many Pickets for a Fence Gate? Gate Width Chart</title>
+<link>https://yardcompute.com/fence-calculators/fence-gate-calculator/</link>
+<description>How many 5.5 inch pickets does a wood fence gate need? This chart covers gates from 3 ft to 12 ft wide with a 1/8 inch gap, and the free gate calculator works it out for your own picket size.</description>
+<guid isPermaLink="false">yardcompute-pin-fence-gate-pickets-chart</guid>
+<pubDate>Sun, 15 Nov 2026 00:00:00 +0000</pubDate>
+<enclosure url="https://yardcompute.com/assets/pins/fence-gate-pickets-chart.png" length="96306" type="image/png"/>
+<media:content url="https://yardcompute.com/assets/pins/fence-gate-pickets-chart.png" medium="image" type="image/png" width="1000" height="1500"/>
 </item>
 </channel>
 </rss>

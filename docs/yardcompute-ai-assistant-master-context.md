@@ -66,6 +66,16 @@ PENDING:
 - Remaining shorter pages (~350–390 words, already have real formulas): mulch bag, fence material, deck board spacing, fence post spacing, paver calculator — expand only with GSC evidence; some were deliberately optimized for specific queries.
 - Wait 2–4 weeks for recrawl, then review GSC before the AdSense pre-application audit.
 
+## Change log — 2026-11-15 (weekly maintenance run, scheduled task)
+DONE:
+- Health check: 69/69 tests passed; 0 broken internal links across 83 pages; every page in the sitemap (src/worker.js and public/sitemap.xml match); titles and descriptions unique.
+- Pinterest: 5 new pins (numbers computed from app.js configs): fence-gate-pickets-chart (fence, fence gate calculator), deck-footing-concrete-bags (deck, deck footing calculator), post-hole-concrete-sizes (concrete, post hole concrete calculator), paver-patio-base-sand-chart (pavers, paver base & sand calculator), mulch-cubic-yards-chart (lawn, mulch calculator). 11 pins total.
+- New guide /guides/measure-concrete-thickness/ (GSC demand: "how to measure concrete thickness", 31 impressions): edge, test-hole, existing-opening and records/scan methods for existing slabs; string-line form check for new pours (2x4 form = about 3.5 in); thickness-vs-order table from the concrete bag calculator; safety notes (post-tension cables, silica dust). Added to sitemap, Guides hub, concrete slab guide and concrete bag calculator related links. Guide numbers are checked in scripts/calculator-examples.test.js (76 tests).
+
+PENDING:
+- Next weekly runs: start the embeddable widget (fence post spacing first), then quick-answer boxes; remaining demand candidates: deck size calculator (39 impr), driveway area calculator, gate cost calculator, sandbag calculator.
+- Check in the Dec GSC export whether the new guide gets impressions for "how to measure concrete thickness".
+
 ## Pinterest auto-publishing (added 2026-11-15)
 - Pins are defined in `scripts/pinterest/pins.json` (boards + pins). `python3 scripts/pinterest/build.py` renders `public/assets/pins/<id>.png` (1000x1500) and writes one RSS 2.0 feed per board at `public/pins/<board>.xml`.
 - Pinterest business account auto-publishes new feed items to the matching board within ~24 h (oldest first). Feeds must only link to yardcompute.com (claimed domain).
@@ -115,7 +125,7 @@ Embeddable calculator widget for organic backlinks. Build it across the next wee
 ## Current site scale
 - About 50 calculators.
 - 7 categories.
-- 19 guides.
+- 20 guides (84 pages in the sitemap as of 2026-11-15).
 - Key routes include home, about, contact, privacy-policy, terms, disclaimer, calculator category hubs, calculator pages, and guides.
 - Technical SEO has generally been audited as good: canonicals, titles/descriptions, schema, sitemap/robots, and noindex issues were checked.
 - Site-wide OG/social image injection exists in src/worker.js.

@@ -100,3 +100,25 @@ for (const [key, overrides, expected, phrases] of cases) {
     for (const phrase of phrases) assert.ok(html.includes(phrase), `${key} page should mention "${phrase}"`);
   });
 }
+
+// Guide pages that quote calculator results.
+const guideCases = [
+  ["measure-concrete-thickness", "concrete-bag-calculator", { depth: 3.5 }, ["32.08 cu ft", "1.19 yd³", "54 bags"]],
+  ["measure-concrete-thickness", "concrete-bag-calculator", { depth: 4 }, ["36.67 cu ft", "1.36 yd³", "62 bags"]],
+  ["measure-concrete-thickness", "concrete-bag-calculator", { depth: 5 }, ["45.83 cu ft", "1.70 yd³", "77 bags"]],
+  ["measure-concrete-thickness", "concrete-bag-calculator", { depth: 5.5 }, ["50.42 cu ft", "1.87 yd³", "85 bags"]],
+  ["measure-concrete-thickness", "concrete-bag-calculator", { depth: 6 }, ["55.00 cu ft", "2.04 yd³", "92 bags"]],
+  ["measure-concrete-thickness", "concrete-bag-calculator", { length: 12, width: 20, depth: 3.5 }, ["2.85 yd³"]],
+  ["measure-concrete-thickness", "concrete-bag-calculator", { length: 12, width: 20, depth: 4 }, ["3.26 yd³"]],
+];
+
+for (const [guide, key, overrides, expected] of guideCases) {
+  test(`guide ${guide} quotes ${key} ${JSON.stringify(overrides)} correctly`, () => {
+    const results = Object.values(run(key, overrides));
+    const html = fs.readFileSync(path.join(__dirname, "..", "public", "guides", guide, "index.html"), "utf8");
+    for (const value of expected) {
+      assert.ok(results.includes(value) || results.some((r) => r.startsWith(value)), `${key}: calculator does not return "${value}"`);
+      assert.ok(html.includes(value), `${guide} should mention "${value}"`);
+    }
+  });
+}

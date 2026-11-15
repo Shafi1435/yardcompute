@@ -5,7 +5,7 @@
 <link>https://yardcompute.com/</link>
 <description>Deck boards, joists, footings and screws: how much to buy.</description>
 <language>en-us</language>
-<lastBuildDate>Sun, 15 Nov 2026 04:13:54 +0000</lastBuildDate>
+<lastBuildDate>Sun, 15 Nov 2026 08:49:02 +0000</lastBuildDate>
 <item>
 <title>How Many Deck Boards Do I Need? Deck Board Chart</title>
 <link>https://yardcompute.com/deck-calculators/deck-board-calculator/</link>
@@ -14,6 +14,15 @@
 <pubDate>Sun, 15 Nov 2026 00:00:00 +0000</pubDate>
 <enclosure url="https://yardcompute.com/assets/pins/deck-boards-chart.png" length="114192" type="image/png"/>
 <media:content url="https://yardcompute.com/assets/pins/deck-boards-chart.png" medium="image" type="image/png" width="1000" height="1500"/>
+</item>
+<item>
+<title>How Many Bags of Concrete for Deck Footings? (12 x 36 in)</title>
+<link>https://yardcompute.com/deck-calculators/deck-footing-calculator/</link>
+<description>See how many 80 lb bags of concrete you need for 4 to 15 round deck footings, 12 inches wide and 36 inches deep, with 10% extra. Use the free deck footing calculator for your own hole size and frost depth.</description>
+<guid isPermaLink="false">yardcompute-pin-deck-footing-concrete-bags</guid>
+<pubDate>Sun, 15 Nov 2026 00:00:00 +0000</pubDate>
+<enclosure url="https://yardcompute.com/assets/pins/deck-footing-concrete-bags.png" length="127422" type="image/png"/>
+<media:content url="https://yardcompute.com/assets/pins/deck-footing-concrete-bags.png" medium="image" type="image/png" width="1000" height="1500"/>
 </item>
 </channel>
 </rss>

@@ -280,6 +280,246 @@
     ]
    ],
    "note": "Board count is across the deck width. Buy boards at least as long as the deck, or plan joints over joists."
+  },
+  {
+   "id": "fence-gate-pickets-chart",
+   "board": "fence",
+   "date": "2026-11-15",
+   "link": "https://yardcompute.com/fence-calculators/fence-gate-calculator/",
+   "title": "How Many Pickets for a Fence Gate? Gate Width Chart",
+   "description": "How many 5.5 inch pickets does a wood fence gate need? This chart covers gates from 3 ft to 12 ft wide with a 1/8 inch gap, and the free gate calculator works it out for your own picket size.",
+   "kicker": "Fence gates",
+   "heading": "How Many Pickets for a Fence Gate?",
+   "sub": "5.5 in pickets with a 1/8 in gap between them.",
+   "columns": [
+    "Gate width",
+    "Pickets",
+    "+10% extra"
+   ],
+   "rows": [
+    [
+     "3 ft gate",
+     "7",
+     "8"
+    ],
+    [
+     "4 ft gate",
+     "9",
+     "10"
+    ],
+    [
+     "5 ft gate",
+     "11",
+     "13"
+    ],
+    [
+     "6 ft gate",
+     "13",
+     "15"
+    ],
+    [
+     "10 ft gate",
+     "22",
+     "25"
+    ],
+    [
+     "12 ft gate",
+     "26",
+     "29"
+    ]
+   ],
+   "note": "Double drive gates: use the total opening width. Frame, hinges and latch are extra."
+  },
+  {
+   "id": "deck-footing-concrete-bags",
+   "board": "deck",
+   "date": "2026-11-15",
+   "link": "https://yardcompute.com/deck-calculators/deck-footing-calculator/",
+   "title": "How Many Bags of Concrete for Deck Footings? (12 x 36 in)",
+   "description": "See how many 80 lb bags of concrete you need for 4 to 15 round deck footings, 12 inches wide and 36 inches deep, with 10% extra. Use the free deck footing calculator for your own hole size and frost depth.",
+   "kicker": "Deck planning",
+   "heading": "How Many Concrete Bags for Deck Footings?",
+   "sub": "12 in round holes, 36 in deep, 10% extra included.",
+   "columns": [
+    "Footings",
+    "Concrete",
+    "80 lb bags"
+   ],
+   "rows": [
+    [
+     "4 footings",
+     "0.38 yd³",
+     "18"
+    ],
+    [
+     "6 footings",
+     "0.58 yd³",
+     "26"
+    ],
+    [
+     "8 footings",
+     "0.77 yd³",
+     "35"
+    ],
+    [
+     "9 footings",
+     "0.86 yd³",
+     "39"
+    ],
+    [
+     "12 footings",
+     "1.15 yd³",
+     "52"
+    ],
+    [
+     "15 footings",
+     "1.44 yd³",
+     "65"
+    ]
+   ],
+   "note": "Assumes about 0.60 cu ft per 80 lb bag. Footing depth must meet your local frost line and code."
+  },
+  {
+   "id": "post-hole-concrete-sizes",
+   "board": "concrete",
+   "date": "2026-11-15",
+   "link": "https://yardcompute.com/concrete-calculators/post-hole-concrete-calculator/",
+   "title": "How Much Concrete per Post Hole? 80 lb Bag Chart by Hole Size",
+   "description": "How many 80 lb bags of concrete does a post hole take? This chart shows bags for one hole and for 10 holes at common diameters and depths, with 10% extra. The free post hole calculator handles any size.",
+   "kicker": "Concrete projects",
+   "heading": "How Much Concrete per Post Hole?",
+   "sub": "80 lb bags, 10% extra included. The post itself is not subtracted.",
+   "columns": [
+    "Hole (dia × depth)",
+    "1 hole",
+    "10 holes"
+   ],
+   "rows": [
+    [
+     "8 × 24 in",
+     "2",
+     "13"
+    ],
+    [
+     "10 × 24 in",
+     "2",
+     "20"
+    ],
+    [
+     "10 × 30 in",
+     "3",
+     "25"
+    ],
+    [
+     "12 × 30 in",
+     "4",
+     "36"
+    ],
+    [
+     "12 × 36 in",
+     "5",
+     "44"
+    ],
+    [
+     "12 × 42 in",
+     "6",
+     "51"
+    ]
+   ],
+   "note": "Assumes about 0.60 cu ft per 80 lb bag. Bag counts are rounded up."
+  },
+  {
+   "id": "paver-patio-base-sand-chart",
+   "board": "pavers",
+   "date": "2026-11-15",
+   "link": "https://yardcompute.com/paver-calculators/paver-base-sand-calculator/",
+   "title": "How Much Base Gravel and Sand for a Paver Patio? Size Chart",
+   "description": "How much gravel base and bedding sand does a paver patio need? See amounts for patios from 10x10 to 16x20 ft with a 6 inch base and 1 inch of sand, then use the free paver base calculator for your own depths.",
+   "kicker": "Patio & walkway",
+   "heading": "How Much Base and Sand for a Paver Patio?",
+   "sub": "6 in gravel base and 1 in bedding sand, 10% extra included.",
+   "columns": [
+    "Patio size",
+    "Base gravel",
+    "Bedding sand"
+   ],
+   "rows": [
+    [
+     "10 × 10 ft",
+     "2.04 yd³",
+     "9.17 cu ft"
+    ],
+    [
+     "10 × 12 ft",
+     "2.44 yd³",
+     "11.00 cu ft"
+    ],
+    [
+     "12 × 12 ft",
+     "2.93 yd³",
+     "13.20 cu ft"
+    ],
+    [
+     "12 × 16 ft",
+     "3.91 yd³",
+     "17.60 cu ft"
+    ],
+    [
+     "12 × 20 ft",
+     "4.89 yd³",
+     "22.00 cu ft"
+    ],
+    [
+     "16 × 20 ft",
+     "6.52 yd³",
+     "29.33 cu ft"
+    ]
+   ],
+   "note": "Driveways and soft soil usually need a deeper base. Check the paver maker's guide."
+  },
+  {
+   "id": "mulch-cubic-yards-chart",
+   "board": "lawn",
+   "date": "2026-11-15",
+   "link": "https://yardcompute.com/landscaping-calculators/mulch-calculator/",
+   "title": "How Much Mulch Do I Need? Cubic Yards Chart by Bed Size",
+   "description": "How many cubic yards of mulch do you need? See amounts for garden beds from 50 to 500 sq ft at 2 and 3 inches deep, with 10% extra, then use the free mulch calculator for your exact beds.",
+   "kicker": "Garden beds",
+   "heading": "How Much Mulch Do I Need?",
+   "sub": "Cubic yards of mulch, 10% extra included.",
+   "columns": [
+    "Bed area",
+    "2 in deep",
+    "3 in deep"
+   ],
+   "rows": [
+    [
+     "50 sq ft",
+     "0.34 yd³",
+     "0.51 yd³"
+    ],
+    [
+     "100 sq ft",
+     "0.68 yd³",
+     "1.02 yd³"
+    ],
+    [
+     "200 sq ft",
+     "1.36 yd³",
+     "2.04 yd³"
+    ],
+    [
+     "300 sq ft",
+     "2.04 yd³",
+     "3.06 yd³"
+    ],
+    [
+     "500 sq ft",
+     "3.40 yd³",
+     "5.09 yd³"
+    ]
+   ],
+   "note": "1 cubic yard = 27 cu ft. Keep mulch a few inches away from tree trunks and house siding."
   }
  ]
 }
