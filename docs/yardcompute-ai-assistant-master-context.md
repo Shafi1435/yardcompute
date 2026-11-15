@@ -92,6 +92,19 @@ PENDING:
 5. Open a PR, wait for checks, squash-merge, confirm the deploy workflow succeeded, spot-check one live page.
 6. Append a dated entry to this change log (DONE / PENDING).
 
+### Competitor findings and roadmap (research 2026-11-15, owner approved "do what is best")
+Top results for our main queries are held by high-authority calculator sites (inchcalculator.com, omnicalculator.com, calculatorsoup.com, gigacalculator.com), home-services publishers (angi.com, homeadvisor.com, homedit.com) and retailers with calculators (eartheasy.com, hooverfence.com). There is also a flood of new AI-built calculator sites on *.pages.dev with near-identical pages and ads. We cannot out-authority the big sites soon; we win by being clearly more useful on specific questions and by earning links.
+Features competitors have that we lack (build in this order, one per weekly run, with tests):
+1. Quick-answer box at the top of high-impression pages: one sentence with a concrete example and its number (e.g. "A 10 x 10 ft area at 2 in deep needs about X cubic yards"), computed from the calculator.
+2. Optional price input -> cost estimate (price per ton / cubic yard / bag / board / sq ft) on gravel, river rock, mulch, topsoil, concrete (bag + yard), pavers, deck boards, fence pickets. Only pea gravel cost has one today. Never show made-up market prices; the user enters their own price.
+3. Grass seed: grass-type presets (rate per 1,000 sq ft for new lawn vs overseeding) taken from cited university extension sources, plus a new-lawn / overseeding toggle. Cite sources on the page.
+4. Area shapes (rectangle, circle, triangle) for area-based calculators (gravel, mulch, topsoil, sod, grass seed, pavers, concrete slab).
+5. Material/density presets (pea gravel, crushed stone, river rock, sand, topsoil) with the density shown and editable.
+6. Embeddable widget (see next section) — competitors such as gigacalculator, miniwebtool and inchcalculator offer "embed this calculator".
+7. Printable one-page charts (fence posts, pavers per 100 sq ft, concrete bags) as HTML pages with print CSS.
+8. Long-tail answer pages only where GSC shows demand (e.g. "how many 16x16 pavers for a 10x10 patio"): one strong page per cluster, never many thin variants.
+Do not copy competitor text, invent credentials or "reviewed by P.E." bylines, or add fake ratings.
+
 ### Approved next project (owner said yes on 2026-11-15)
 Embeddable calculator widget for organic backlinks. Build it across the next weekly runs, one calculator at a time, starting with the most visited ones (fence post spacing, grass seed, paver, concrete bag, gravel):
 - A lightweight embed page per calculator (e.g. /embed/<calculator>/) that reuses app.js configs, has no site header/footer, is noindex, and shows a visible "Powered by YardCompute" link back to the full calculator page.
