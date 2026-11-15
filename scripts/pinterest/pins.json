@@ -1,0 +1,285 @@
+{
+ "boards": {
+  "fence": {
+   "name": "Fence Building Tips & Calculators",
+   "description": "Plan a wood fence: posts, rails, pickets, panels, gates and concrete."
+  },
+  "deck": {
+   "name": "Deck Building Planning",
+   "description": "Deck boards, joists, footings and screws: how much to buy."
+  },
+  "concrete": {
+   "name": "Concrete Projects & Calculators",
+   "description": "Slabs, patios, driveways, footings and post holes: how much concrete you need."
+  },
+  "pavers": {
+   "name": "Paver Patio & Walkway Ideas",
+   "description": "Pavers, base gravel, bedding sand and edging for DIY patios."
+  },
+  "lawn": {
+   "name": "Lawn, Garden & Landscaping",
+   "description": "Grass seed, sod, mulch, topsoil, gravel and river rock calculators."
+  }
+ },
+ "pins": [
+  {
+   "id": "grass-seed-chart",
+   "board": "lawn",
+   "date": "2026-11-15",
+   "link": "https://yardcompute.com/landscaping-calculators/grass-seed-calculator/",
+   "title": "How Much Grass Seed Do I Need? (Chart + Free Calculator)",
+   "description": "Find out how many pounds of grass seed your lawn needs. This chart shows seed amounts for 5,000 sq ft and 1 acre at common label rates, and the free calculator works it out for your exact lawn size and seed bag.",
+   "kicker": "Lawn planning",
+   "heading": "How Much Grass Seed Do I Need?",
+   "sub": "Seed needed = label rate × lawn area. Find your rate on the seed bag.",
+   "columns": [
+    "Rate on the bag",
+    "5,000 sq ft",
+    "1 acre"
+   ],
+   "rows": [
+    [
+     "2 lb / 1,000 sq ft",
+     "10 lb",
+     "87 lb"
+    ],
+    [
+     "4 lb / 1,000 sq ft",
+     "20 lb",
+     "174 lb"
+    ],
+    [
+     "6 lb / 1,000 sq ft",
+     "30 lb",
+     "261 lb"
+    ],
+    [
+     "8 lb / 1,000 sq ft",
+     "40 lb",
+     "348 lb"
+    ]
+   ],
+   "note": "Rates vary by grass type and new lawn vs. overseeding. Add about 10% extra. 1 acre = 43,560 sq ft."
+  },
+  {
+   "id": "pavers-per-100-sq-ft",
+   "board": "pavers",
+   "date": "2026-11-15",
+   "link": "https://yardcompute.com/guides/paver-calculation/",
+   "title": "How Many Pavers Do I Need? Pavers per 100 Sq Ft Chart",
+   "description": "Planning a DIY paver patio or walkway? See how many pavers you need per 100 square feet for 4x8, 6x6, 12x12, 16x16 and other sizes, plus a free paver calculator with waste allowance.",
+   "kicker": "Patio & walkway",
+   "heading": "How Many Pavers Do I Need?",
+   "sub": "Pavers per 100 square feet for common paver sizes.",
+   "columns": [
+    "Paver size",
+    "Per 100 sq ft",
+    "+10% extra"
+   ],
+   "rows": [
+    [
+     "4 × 8 in",
+     "450",
+     "495"
+    ],
+    [
+     "6 × 6 in",
+     "400",
+     "440"
+    ],
+    [
+     "6 × 9 in",
+     "267",
+     "294"
+    ],
+    [
+     "12 × 12 in",
+     "100",
+     "110"
+    ],
+    [
+     "16 × 16 in",
+     "57",
+     "62"
+    ],
+    [
+     "12 × 24 in",
+     "50",
+     "55"
+    ]
+   ],
+   "note": "Example: a 10 × 10 ft patio with 16 × 16 in pavers needs 57 pavers, or 62 with 10% extra."
+  },
+  {
+   "id": "fence-posts-chart",
+   "board": "fence",
+   "date": "2026-11-15",
+   "link": "https://yardcompute.com/guides/fence-post-spacing/",
+   "title": "How Many Fence Posts Do I Need? Fence Post Chart",
+   "description": "Quick fence post chart for 50 to 300 ft fences at 6 ft and 8 ft spacing. Learn the simple formula (posts = sections + 1), how to space posts evenly, and when to add posts for corners and gates.",
+   "kicker": "Fence planning",
+   "heading": "How Many Fence Posts Do I Need?",
+   "sub": "Posts for one straight fence run. Posts = sections + 1.",
+   "columns": [
+    "Fence length",
+    "6 ft apart",
+    "8 ft apart"
+   ],
+   "rows": [
+    [
+     "50 ft fence",
+     "10 posts",
+     "8 posts"
+    ],
+    [
+     "100 ft fence",
+     "18 posts",
+     "14 posts"
+    ],
+    [
+     "150 ft fence",
+     "26 posts",
+     "20 posts"
+    ],
+    [
+     "200 ft fence",
+     "35 posts",
+     "26 posts"
+    ],
+    [
+     "300 ft fence",
+     "51 posts",
+     "39 posts"
+    ]
+   ],
+   "note": "Add extra posts for corners and gates. Spacing is the maximum; posts end up evenly spaced a little closer."
+  },
+  {
+   "id": "concrete-bags-4in-slab",
+   "board": "concrete",
+   "date": "2026-11-15",
+   "link": "https://yardcompute.com/concrete-calculators/concrete-bag-calculator/",
+   "title": "How Many Bags of Concrete for a Slab? 80 lb Bag Chart",
+   "description": "How many 80 lb bags of concrete for a 4 inch slab? See bag counts for common slab sizes from 4x4 to 12x12, including 10% extra, then use the free concrete bag calculator for your own size and bag yield.",
+   "kicker": "Concrete projects",
+   "heading": "How Many Bags of Concrete for a 4 in Slab?",
+   "sub": "80 lb bags, including 10% extra for waste.",
+   "columns": [
+    "Slab size",
+    "Concrete",
+    "80 lb bags"
+   ],
+   "rows": [
+    [
+     "4 × 4 ft slab",
+     "0.22 yd³",
+     "10"
+    ],
+    [
+     "3 × 10 ft slab",
+     "0.41 yd³",
+     "19"
+    ],
+    [
+     "8 × 8 ft slab",
+     "0.87 yd³",
+     "40"
+    ],
+    [
+     "10 × 10 ft slab",
+     "1.36 yd³",
+     "62"
+    ],
+    [
+     "12 × 12 ft slab",
+     "1.96 yd³",
+     "88"
+    ]
+   ],
+   "note": "Assumes about 0.60 cu ft per 80 lb bag. Check the yield printed on your bag."
+  },
+  {
+   "id": "gravel-3in-chart",
+   "board": "lawn",
+   "date": "2026-11-15",
+   "link": "https://yardcompute.com/gravel-calculators/gravel-calculator/",
+   "title": "How Much Gravel Do I Need? Cubic Yards and Tons Chart",
+   "description": "Gravel chart for common areas at 3 inches deep, in cubic yards and tons. Great for planning paths, patios and gravel beds. Use the free gravel calculator to enter your own size, depth and supplier density.",
+   "kicker": "Landscaping",
+   "heading": "How Much Gravel Do I Need?",
+   "sub": "For a 3 in deep layer, including 10% extra.",
+   "columns": [
+    "Area",
+    "Volume",
+    "Weight"
+   ],
+   "rows": [
+    [
+     "10 × 10 ft",
+     "1.02 yd³",
+     "1.44 tons"
+    ],
+    [
+     "10 × 20 ft",
+     "2.04 yd³",
+     "2.89 tons"
+    ],
+    [
+     "4 × 40 ft",
+     "1.63 yd³",
+     "2.31 tons"
+    ],
+    [
+     "12 × 24 ft",
+     "2.93 yd³",
+     "4.16 tons"
+    ],
+    [
+     "20 × 30 ft",
+     "6.11 yd³",
+     "8.66 tons"
+    ]
+   ],
+   "note": "Weight assumes 105 lb per cubic foot. Ask your supplier for their gravel density."
+  },
+  {
+   "id": "deck-boards-chart",
+   "board": "deck",
+   "date": "2026-11-15",
+   "link": "https://yardcompute.com/deck-calculators/deck-board-calculator/",
+   "title": "How Many Deck Boards Do I Need? Deck Board Chart",
+   "description": "Deck board counts for common deck sizes using 5.5 in boards with 1/8 in gaps, plus linear feet with 10% extra. Use the free deck board calculator for your own deck size, board width and gap.",
+   "kicker": "Deck planning",
+   "heading": "How Many Deck Boards Do I Need?",
+   "sub": "5.5 in boards, 1/8 in gaps. Boards run along the deck length.",
+   "columns": [
+    "Deck size (L × W)",
+    "Boards",
+    "Linear ft +10%"
+   ],
+   "rows": [
+    [
+     "10 × 10 ft deck",
+     "22 boards",
+     "242 ft"
+    ],
+    [
+     "12 × 12 ft deck",
+     "26 boards",
+     "343 ft"
+    ],
+    [
+     "16 × 12 ft deck",
+     "26 boards",
+     "458 ft"
+    ],
+    [
+     "20 × 16 ft deck",
+     "35 boards",
+     "770 ft"
+    ]
+   ],
+   "note": "Board count is across the deck width. Buy boards at least as long as the deck, or plan joints over joists."
+  }
+ ]
+}

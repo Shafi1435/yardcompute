@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<title>Fence Building Tips &amp; Calculators | YardCompute</title>
+<link>https://yardcompute.com/</link>
+<description>Plan a wood fence: posts, rails, pickets, panels, gates and concrete.</description>
+<language>en-us</language>
+<lastBuildDate>Sun, 15 Nov 2026 04:13:54 +0000</lastBuildDate>
+<item>
+<title>How Many Fence Posts Do I Need? Fence Post Chart</title>
+<link>https://yardcompute.com/guides/fence-post-spacing/</link>
+<description>Quick fence post chart for 50 to 300 ft fences at 6 ft and 8 ft spacing. Learn the simple formula (posts = sections + 1), how to space posts evenly, and when to add posts for corners and gates.</description>
+<guid isPermaLink="false">yardcompute-pin-fence-posts-chart</guid>
+<pubDate>Sun, 15 Nov 2026 00:00:00 +0000</pubDate>
+<enclosure url="https://yardcompute.com/assets/pins/fence-posts-chart.png" length="101512" type="image/png"/>
+<media:content url="https://yardcompute.com/assets/pins/fence-posts-chart.png" medium="image" type="image/png" width="1000" height="1500"/>
+</item>
+</channel>
+</rss>
