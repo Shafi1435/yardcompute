@@ -19,7 +19,7 @@ const configs = context.module.exports;
 
 test("all calculator configurations return results for their documented default values", () => {
   const entries = Object.entries(configs);
-  assert.equal(entries.length, 50, "expected all 50 calculator configurations");
+  assert.equal(entries.length, 51, "expected all 51 calculator configurations");
 
   for (const [key, config] of entries) {
     const values = {};

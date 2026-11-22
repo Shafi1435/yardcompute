@@ -520,6 +520,251 @@
     ]
    ],
    "note": "1 cubic yard = 27 cu ft. Keep mulch a few inches away from tree trunks and house siding."
+  },
+  {
+   "id": "fence-panels-posts-by-length",
+   "board": "fence",
+   "date": "2026-11-22",
+   "link": "https://yardcompute.com/fence-calculators/fence-panel-calculator/",
+   "title": "How Many Fence Panels Do I Need? Panels and Posts by Fence Length",
+   "description": "See how many 8 ft fence panels and posts you need for a 50 to 300 ft fence, with 10% extra panels to order. Use the free fence panel calculator for your exact fence length and panel width.",
+   "kicker": "Fence planning",
+   "heading": "How Many Fence Panels Do I Need?",
+   "sub": "8 ft wide panels on a straight run, 10% extra included.",
+   "columns": [
+    "Fence length",
+    "Panels to order",
+    "Posts"
+   ],
+   "rows": [
+    [
+     "50 ft",
+     "8 panels",
+     "8 posts"
+    ],
+    [
+     "100 ft",
+     "15 panels",
+     "14 posts"
+    ],
+    [
+     "150 ft",
+     "21 panels",
+     "20 posts"
+    ],
+    [
+     "200 ft",
+     "28 panels",
+     "26 posts"
+    ],
+    [
+     "250 ft",
+     "36 panels",
+     "33 posts"
+    ],
+    [
+     "300 ft",
+     "42 panels",
+     "39 posts"
+    ]
+   ],
+   "note": "Posts = panels + 1 for one straight run. Add a post for each corner, end and gate."
+  },
+  {
+   "id": "deck-boards-by-deck-width",
+   "board": "deck",
+   "date": "2026-11-22",
+   "link": "https://yardcompute.com/deck-calculators/deck-board-spacing-calculator/",
+   "title": "How Many Deck Boards Fit Across My Deck? Boards and Gap by Deck Width",
+   "description": "How many 5.5 in deck boards fit across a deck 8 to 20 ft wide with a 1/8 in gap, and what the real gap works out to. Use the free deck board spacing calculator for your own boards.",
+   "kicker": "Deck boards",
+   "heading": "How Many Deck Boards Across My Deck?",
+   "sub": "5.5 in wide boards (5/4x6 or 2x6) with a 1/8 in target gap.",
+   "columns": [
+    "Deck width",
+    "Boards",
+    "Actual gap"
+   ],
+   "rows": [
+    [
+     "8 ft",
+     "17 boards",
+     "0.156 in"
+    ],
+    [
+     "10 ft",
+     "21 boards",
+     "0.225 in"
+    ],
+    [
+     "12 ft",
+     "25 boards",
+     "0.271 in"
+    ],
+    [
+     "14 ft",
+     "29 boards",
+     "0.304 in"
+    ],
+    [
+     "16 ft",
+     "34 boards",
+     "0.152 in"
+    ],
+    [
+     "20 ft",
+     "42 boards",
+     "0.220 in"
+    ]
+   ],
+   "note": "Width is measured across the joists. Check the board maker's gap rules: wet wood boards often go tight."
+  },
+  {
+   "id": "concrete-driveway-yards-chart",
+   "board": "concrete",
+   "date": "2026-11-22",
+   "link": "https://yardcompute.com/concrete-calculators/concrete-driveway-calculator/",
+   "title": "How Much Concrete for a Driveway? Cubic Yards Chart by Size",
+   "description": "How many cubic yards of concrete does a driveway need? See amounts for common driveway sizes at 4 and 5 inches thick with 10% extra, then use the free concrete driveway calculator.",
+   "kicker": "Concrete driveway",
+   "heading": "How Much Concrete for a Driveway?",
+   "sub": "Cubic yards to order, 10% extra included.",
+   "columns": [
+    "Driveway size",
+    "4 in thick",
+    "5 in thick"
+   ],
+   "rows": [
+    [
+     "10 x 20 ft",
+     "2.72 yd³",
+     "3.40 yd³"
+    ],
+    [
+     "12 x 20 ft",
+     "3.26 yd³",
+     "4.07 yd³"
+    ],
+    [
+     "12 x 40 ft",
+     "6.52 yd³",
+     "8.15 yd³"
+    ],
+    [
+     "16 x 40 ft",
+     "8.69 yd³",
+     "10.86 yd³"
+    ],
+    [
+     "20 x 20 ft",
+     "5.43 yd³",
+     "6.79 yd³"
+    ],
+    [
+     "24 x 24 ft",
+     "7.82 yd³",
+     "9.78 yd³"
+    ]
+   ],
+   "note": "Ready-mix is usually ordered in quarter or half yards. Check local code for driveway thickness and base."
+  },
+  {
+   "id": "pavers-by-patio-size",
+   "board": "pavers",
+   "date": "2026-11-22",
+   "link": "https://yardcompute.com/paver-calculators/paver-calculator/",
+   "title": "How Many Pavers for a 10x10, 12x12 or 16x20 Patio? (Chart)",
+   "description": "See how many 12x12 and 16x16 pavers you need for common patio sizes, with 10% extra for cuts and breakage. The free paver calculator works it out for any patio and paver size.",
+   "kicker": "Paver patio",
+   "heading": "How Many Pavers for My Patio?",
+   "sub": "Pavers to order, 10% extra for cuts included.",
+   "columns": [
+    "Patio size",
+    "12x12 in",
+    "16x16 in"
+   ],
+   "rows": [
+    [
+     "10 x 10 ft",
+     "110",
+     "62"
+    ],
+    [
+     "12 x 12 ft",
+     "159",
+     "90"
+    ],
+    [
+     "10 x 20 ft",
+     "220",
+     "124"
+    ],
+    [
+     "12 x 16 ft",
+     "212",
+     "119"
+    ],
+    [
+     "16 x 20 ft",
+     "352",
+     "198"
+    ],
+    [
+     "20 x 20 ft",
+     "440",
+     "248"
+    ]
+   ],
+   "note": "Uses nominal paver size. Curves, borders and herringbone patterns need more extra."
+  },
+  {
+   "id": "driveway-gravel-tons-chart",
+   "board": "lawn",
+   "date": "2026-11-22",
+   "link": "https://yardcompute.com/gravel-calculators/driveway-gravel-calculator/",
+   "title": "How Much Gravel for a Driveway? Cubic Yards and Tons Chart",
+   "description": "How much gravel do you need for a gravel driveway 4 inches deep? See cubic yards and tons for common driveway sizes, with 10% extra, then use the free driveway gravel calculator.",
+   "kicker": "Gravel driveway",
+   "heading": "How Much Gravel for My Driveway?",
+   "sub": "4 in deep, 10% extra included, 105 lb per cu ft.",
+   "columns": [
+    "Driveway size",
+    "Cubic yards",
+    "Tons"
+   ],
+   "rows": [
+    [
+     "20 x 10 ft",
+     "2.72 yd³",
+     "3.85 tons"
+    ],
+    [
+     "40 x 10 ft",
+     "5.43 yd³",
+     "7.70 tons"
+    ],
+    [
+     "40 x 12 ft",
+     "6.52 yd³",
+     "9.24 tons"
+    ],
+    [
+     "60 x 12 ft",
+     "9.78 yd³",
+     "13.86 tons"
+    ],
+    [
+     "100 x 12 ft",
+     "16.30 yd³",
+     "23.10 tons"
+    ],
+    [
+     "100 x 16 ft",
+     "21.73 yd³",
+     "30.80 tons"
+    ]
+   ],
+   "note": "Gravel density varies by stone type. Ask your supplier for its weight per cubic yard."
   }
  ]
 }
