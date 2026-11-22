@@ -76,6 +76,17 @@ PENDING:
 - Next weekly runs: start the embeddable widget (fence post spacing first), then quick-answer boxes; remaining demand candidates: deck size calculator (39 impr), driveway area calculator, gate cost calculator, sandbag calculator.
 - Check in the Dec GSC export whether the new guide gets impressions for "how to measure concrete thickness".
 
+## Change log — 2026-11-22 (weekly maintenance run, scheduled task)
+DONE:
+- Health check: 76/76 tests passed before changes; 0 broken internal links across 84 pages; sitemap (src/worker.js + public/sitemap.xml) matched all pages; titles and descriptions unique.
+- Pinterest: 5 new pins (numbers computed from app.js configs), all on pages not pinned before: fence-panels-posts-by-length (fence, fence panel calculator, 44 GSC impr), deck-boards-by-deck-width (deck, deck board spacing calculator, "deck board distance"), concrete-driveway-yards-chart (concrete, concrete driveway calculator), pavers-by-patio-size (pavers, paver calculator, "paver calculator" pos 62), driveway-gravel-tons-chart (lawn, driveway gravel calculator, "gravel driveway calculator" pos 77). 16 pins total. pins.json written with ensure_ascii=False so existing entries keep their × and ³ characters.
+- New calculator /deck-calculators/deck-size-calculator/ (GSC demand: "deck size calculator", 39 impr): area, perimeter, open-side railing length (attached deck), guardrail flag (IRC: over 30 in), stair risers (7.75 in max) and treads; common-size and height tables, deck sizing method, L-shaped decks, IRC permit exemption note. Config in app.js (51 configs; smoke test count updated), sitemap entry (worker.js + sitemap.xml), Deck hub card + guide link, homepage Deck list (8 calculators), Deck Materials related link. 9 example tests added (85 tests).
+- Embeddable widget: NOT started this run (the run's content slot went to the deck size calculator).
+
+PENDING:
+- Next runs: embeddable widget (fence post spacing first), then quick-answer boxes; remaining demand candidates: driveway area calculator (24), gate cost calculator (24), sandbag calculator (18).
+- Dec GSC export: check impressions for /deck-calculators/deck-size-calculator/ and /guides/measure-concrete-thickness/.
+
 ## Pinterest auto-publishing (added 2026-11-15)
 - Pins are defined in `scripts/pinterest/pins.json` (boards + pins). `python3 scripts/pinterest/build.py` renders `public/assets/pins/<id>.png` (1000x1500) and writes one RSS 2.0 feed per board at `public/pins/<board>.xml`.
 - Pinterest business account auto-publishes new feed items to the matching board within ~24 h (oldest first). Feeds must only link to yardcompute.com (claimed domain).
@@ -125,7 +136,7 @@ Embeddable calculator widget for organic backlinks. Build it across the next wee
 ## Current site scale
 - About 50 calculators.
 - 7 categories.
-- 20 guides (84 pages in the sitemap as of 2026-11-15).
+- 20 guides (85 pages in the sitemap as of 2026-11-22; 51 calculators).
 - Key routes include home, about, contact, privacy-policy, terms, disclaimer, calculator category hubs, calculator pages, and guides.
 - Technical SEO has generally been audited as good: canonicals, titles/descriptions, schema, sitemap/robots, and noindex issues were checked.
 - Site-wide OG/social image injection exists in src/worker.js.

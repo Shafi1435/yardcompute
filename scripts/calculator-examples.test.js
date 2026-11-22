@@ -90,6 +90,15 @@ const cases = [
   ["fence-panel-calculator", {}, { "Fence panels": "13 panels", "Panels to order": "15 panels", "Posts": "14 posts" }, ["13 panels, 14 posts", "17 panels, 18 posts"]],
   ["fence-panel-calculator", { length: 50, panel: 6 }, { "Fence panels": "9 panels", "Posts": "10 posts" }, ["9 panels, 10 posts"]],
   ["fence-gate-calculator", {}, { "Gate area": "24.00 sq ft", "Pickets without waste": "9 pickets", "Pickets to order": "10 pickets" }, ["24 square feet", "10 pickets"]],
+  ["deck-size-calculator", {}, { "Deck area": "192.00 sq ft", "Perimeter": "56.0 ft", "Open sides (attached deck)": "40.0 ft", "Guardrail": "Required (over 30 in high)", "Stair risers": "5 risers at 7.20 in", "Stair treads": "4 treads" }, ["192.00 sq ft", "56.0 ft", "40.0 ft", "5 risers at 7.20 in", "4 treads"]],
+  ["deck-size-calculator", { length: 10, depth: 10 }, { "Deck area": "100.00 sq ft", "Perimeter": "40.0 ft", "Open sides (attached deck)": "30.0 ft" }, ["<td>10 × 10 ft</td><td>100.00 sq ft</td><td>40.0 ft</td><td>30.0 ft</td>"]],
+  ["deck-size-calculator", { length: 20, depth: 16 }, { "Deck area": "320.00 sq ft", "Perimeter": "72.0 ft", "Open sides (attached deck)": "52.0 ft" }, ["<td>20 × 16 ft</td><td>320.00 sq ft</td><td>72.0 ft</td><td>52.0 ft</td>"]],
+  ["deck-size-calculator", { length: 12, depth: 10 }, { "Deck area": "120.00 sq ft" }, ["120.00 sq ft + 48.00 sq ft = 168.00 sq ft"]],
+  ["deck-size-calculator", { height: 18 }, { "Guardrail": "Not required by height (30 in or less)", "Stair risers": "3 risers at 6.00 in", "Stair treads": "2 treads" }, ["<td>18 in</td><td>3 risers at 6.00 in</td><td>2 treads</td><td>No (by height)</td>"]],
+  ["deck-size-calculator", { height: 30 }, { "Guardrail": "Not required by height (30 in or less)", "Stair risers": "4 risers at 7.50 in" }, ["<td>30 in</td><td>4 risers at 7.50 in</td><td>3 treads</td><td>No (by height)</td>"]],
+  ["deck-size-calculator", { height: 48 }, { "Guardrail": "Required (over 30 in high)", "Stair risers": "7 risers at 6.86 in", "Stair treads": "6 treads" }, ["<td>48 in</td><td>7 risers at 6.86 in</td><td>6 treads</td><td>Yes</td>"]],
+  ["deck-size-calculator", { height: 12 }, { "Stair risers": "2 risers at 6.00 in", "Stair treads": "1 tread" }, []],
+  ["deck-size-calculator", { height: 6 }, { "Stair risers": "1 riser at 6.00 in", "Stair treads": "0 treads" }, []],
 ];
 
 for (const [key, overrides, expected, phrases] of cases) {
